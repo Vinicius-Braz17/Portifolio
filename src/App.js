@@ -1,8 +1,8 @@
 import Navegacao from './Pages/Navegacao';
-import Apresentacao from './Pages/Apresentacao';
 import './App.css';
 import InicioHome from './Pages/InicioHome';
 import React, { useState } from 'react';
+import Pag2Home from './Pages/Pag2Home';
 
 function App() {
 
@@ -16,8 +16,8 @@ function App() {
   <>
    <Navegacao changeL={changeLanguage} language={language}/>
    {/* <Apresentacao /> */}
-   <InicioHome language={language}/>
-   
+   <InicioHome lang={language}/>
+   <Pag2Home lang={language}/>
   </>
   );
 }

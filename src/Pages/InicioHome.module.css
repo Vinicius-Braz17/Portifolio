@@ -7,12 +7,12 @@
     background: url('../images/inicioHome.jpg');
     background-size: 100vw, 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .m .degrade {
     height: 100%;
     background-image: linear-gradient(to top, black,rgba(75, 75, 75, 0.1));;
-    z-index: 1;
     color: white;
     display: flex;
     flex-direction: column;
@@ -30,5 +30,50 @@
 
 .m .degrade p {
     font-size: 30px;
+}
+
+.m .degrade .fotoFundo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    opacity: 0.2;
+    height: 720px;
+}
+
+.star1 {
+    animation: anim-stars 6s backwards infinite;
+    animation-timing-function: linear;
+}.star2 {    
+    animation: anim-stars 13s backwards infinite;
+    animation-timing-function: linear;
+}.star3 {    
+    animation: anim-stars 20s backwards infinite;
+    animation-timing-function: linear;
+}
+
+.star1::after{
+    content: '';
+    opacity: '0.5';
+    width: '3px';
+    height: '3px';
+    background: 'white';
+    border-radius: '50%';
+    position: 'absolute';
+    top: 10px;
+    left: 10px;
+    width: 3px;
+	height: 3px;
+	border-radius: 50%;
+}
+
+@keyframes anim-stars {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(3900px);
+    }
 }
 
