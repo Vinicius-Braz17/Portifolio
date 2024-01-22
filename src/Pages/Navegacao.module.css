@@ -8,6 +8,12 @@
 	border-bottom: 2px solid rgb(139, 77, 255);
 }
 
+@media screen and (max-width: 400px) {
+	.navegacao {
+		width: 100vh
+	}
+}
+
 .navegacao .divNavegacaoBotoes {
 	display: flex;
 	align-items: center;

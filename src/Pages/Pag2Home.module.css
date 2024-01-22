@@ -61,6 +61,21 @@
     transition: all 0.4s;
 }
 
+@media screen and (max-width: 500px) {
+    .div_cards {
+        flex-wrap: wrap;
+        margin-top: 0px;
+        border: 1px solid black;
+        top: 4%;
+        transform: none;
+        width: 100vh;
+    }
+    .sessaoMVV {
+        height: 2400px;
+        width: 50%;
+    }
+  }
+
 .div_cards .versoCard {
     position: absolute; 
     padding: 15px;
