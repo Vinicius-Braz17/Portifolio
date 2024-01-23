@@ -4,7 +4,7 @@
     margin: 0;
     height: 100vh;
     border: 1px solid black;
-    background: url('../images/inicioHome.jpg');
+    background: url('./images/inicioHome.jpg');
     background-size: 100vw, 100vh;
     position: relative;
     overflow: hidden;

@@ -4,10 +4,8 @@ import s from "./Pag2Home.module.css"
 export default function Pag2Home({lang}) {
     return (
         <section className={s.sessaoMVV}>
-            {/* <h1>Missão, visão e valores</h1>
+            <h1>Missão, visão e valores</h1>
             <br></br>
-            <br></br>
-            <br></br> */}
             <div className={s.div_cards}>
                 {/*Carta de missões frente e trás*/}
                 <div className={s.div_missao}>
@@ -38,7 +36,7 @@ export default function Pag2Home({lang}) {
                         {/*Verso*/}
                         <article className={s.versoCard} style={{
                             borderTop: '5px solid rgb(71, 78, 255)'
-                        }}>{lang === 'pt' ? (<p>Ser um gestor de uma grande equipe, passando os meus conhecimentos para todos os meus colaboradore</p>) : (<p>Being a leader of a great team, passing my knoleges to all of my colaborators</p>)}</article>
+                        }}>{lang === 'pt' ? (<p>Ser um gestor de uma grande equipe, passando os meus conhecimentos para todos os meus colaboradores</p>) : (<p>Being a leader of a great team, passing my knoleges to all of my colaborators</p>)}</article>
 
                     </div>
                 </div>
