@@ -33,6 +33,7 @@
 
 .navegacao .botoesNavegacao {
 	color: white;
+	font-family: Arial, Helvetica, sans-serif;
 	padding: 0;
 	margin: 0 15px;
 	width: fit-content;
@@ -40,7 +41,7 @@
 	padding: 8px;
 	line-height: normal;
 	text-wrap: wrap;
-	font-size: 15px;
+	font-size: 17px;
 	cursor: pointer;
 	position: relative;
 	text-align: center;
@@ -72,16 +73,13 @@
 .navegacao .changeLanguage {
 	text-align: center;
 	margin-left: 60px;
-	transition: all 0.3s;
 }
 
 .navegacao .changeLanguage img {
 	height: 20px;
-	margin: 1.5px;
 }
 
 .navegacao .changeLanguage img:hover {
 	border: 1.5px solid rgb(139, 77, 255);
-	position: relative;
-	margin: 0.5px;
+	transform: scale(101%);
 }

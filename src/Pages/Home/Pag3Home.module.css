@@ -1,11 +1,9 @@
 .introducao {
     position: relative;
     display: flex;
+    align-items: flex-start;
     border-top: 5px solid rgb(139, 77, 255);
     height: 780px;
-    width: 100%;
-    background-color: aquamarine;
-
 }
 
 .painel_esquerda .foto_profissional {

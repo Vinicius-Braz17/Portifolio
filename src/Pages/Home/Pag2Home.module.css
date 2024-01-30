@@ -6,13 +6,20 @@
 }
 
 .sessaoMVV h1 {
+    background-image: linear-gradient(to right, rgb(122, 45, 255), rgb(71, 78, 255), rgb(43, 170, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
     color: rgb(139, 77, 255);
-    font-size: 65px;
+    font-size: 60px;
     text-align: center;
+    margin-top: 75px;
 }
 
 .div_cards {
-    margin: 0 auto;
+    margin: 50px auto;
     display: flex;
     justify-content: center;
     align-items: center;
