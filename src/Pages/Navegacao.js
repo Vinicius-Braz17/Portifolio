@@ -6,12 +6,13 @@ import USA from "../images/eua.jpg";
 function Navegacao({ changeL, language }) {
   return (
     <nav className={s.navegacao}>
+
       <img className={s.fotoNav} src={icone} alt="Icone Currículo navegação" />
       <div className={s.divNavegacaoBotoes}>
-        <p className={s.botoesNavegacao}>Home</p>
-        <p className={s.botoesNavegacao}>{language === "pt" ? (<>Formação acadêmica</>) : (<>Academic graduation</>)}</p>
-        <p className={s.botoesNavegacao}>{language === "pt" ? (<>Cursos complementares </>) : (<>Complementary courses</>)}</p>
-        <p className={s.botoesNavegacao}>{language === "pt" ? (<>Contato</>) : (<>Contact</>)}</p>
+        <p className={s.botaoHome}>Home</p>
+        <p>{language === "pt" ? (<>Formação acadêmica</>) : (<>Academic graduation</>)}</p>
+        <p>{language === "pt" ? (<>Cursos complementares </>) : (<>Complementary courses</>)}</p>
+        <p>{language === "pt" ? (<>Contato</>) : (<>Contact</>)}</p>
         <div className={s.changeLanguage}>
           <img onClick={() => changeL("pt")} src={BR} alt="Change language buttom" />
           <br></br>
@@ -19,6 +20,9 @@ function Navegacao({ changeL, language }) {
         </div>
       </div>
 
+      <section className={s.painelHover}>
+        oi
+      </section>
     </nav>
   );
 }

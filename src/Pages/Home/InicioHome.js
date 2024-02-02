@@ -6,7 +6,7 @@ function InicioHome({ lang }) {
 
     var particulas = []
 
-      function inciarlizarParticulas() {
+    function inciarlizarParticulas() {
             for (let i = 0; i < 450; i++) { 
                 let star = Math.random() * 10;
                 if (star < 4) {
@@ -68,15 +68,8 @@ function InicioHome({ lang }) {
                 }
             }
     }
-
-    function escrever() {
-            setTimeout(() => {
-                console.log("agora passou 2 segundos");
-            }, 2000)
-    }
-       
-        inciarlizarParticulas()
-        escrever()
+    
+    inciarlizarParticulas()
       
     return (
         <main className={s.m}>

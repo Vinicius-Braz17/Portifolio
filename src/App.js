@@ -3,6 +3,7 @@ import InicioHome from './Pages/Home/InicioHome';
 import React, { useState } from 'react';
 import Pag2Home from './Pages/Home/Pag2Home';
 import Pag3Home from './Pages/Home/Pag3Home';
+import './App.css'
 
 function App() {
 
@@ -15,7 +16,6 @@ function App() {
   return (
   <>
    <Navegacao changeL={changeLanguage} language={language}/>
-   {/* <Apresentacao /> */}
    <InicioHome lang={language}/>
    <Pag2Home lang={language}/>
    <Pag3Home lang={language}/>
