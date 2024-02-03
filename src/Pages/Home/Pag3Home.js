@@ -16,16 +16,13 @@ export default function Pag3Home({ lang }) {
 
         setTimeout(() => {
             if (t === 1) {
-                // let varTexto = ['quadrado 1', 'qua 2', 'qua 3']
                 setConteudoCard(textos[0]);
             }
             else if (t === 2) {
-                // let varTexto = ['quadrado 4', 'qua 5', 'qua 6']
                 setConteudoCard(textos[1]);
             }
             else if (t === 3) {
-                let varTexto = ['quadrado 7', 'qua 8', 'qua 9']
-                setConteudoCard(varTexto);
+                setConteudoCard(textos[2]);
             }
             else if (t === 4) {
                 let varTexto = ['quadrado 10', 'qua 11', 'qua 12']
@@ -55,13 +52,13 @@ export default function Pag3Home({ lang }) {
                 {lang === 'pt' ? (
                     <h1 className={s.botoes_introducao} onClick={() => show(1)}>Sobre mim</h1>
                 ) : (
-                    <h1 className={s.botoes_introducao}>About Me</h1>
+                    <h1 className={s.botoes_introducao} onClick={() => show(1)}>About Me</h1>
                 )}
 
                 {lang === 'pt' ? (
                     <h1 className={s.botoes_introducao} onClick={() => show(2)}>Meus conhecimentos</h1>
                 ) : (
-                    <h1 className={s.botoes_introducao}>My Knowlodges</h1>
+                    <h1 className={s.botoes_introducao} onClick={() => show(2)}>My Knowlodges</h1>
                 )}
 
                 <h1 className={s.botoes_introducao} onClick={() => show(3)}>Hard Skills</h1>
@@ -70,22 +67,49 @@ export default function Pag3Home({ lang }) {
                 {lang === 'pt' ? (
                     <h1 className={s.botoes_introducao} onClick={() => show(5)}>Por quê me contratar?</h1>
                 ) : (
-                    <h1 className={s.botoes_introducao} onClick={() => show(6)}>Why should you hire me?</h1>
+                    <h1 className={s.botoes_introducao} onClick={() => show(5)}>Why should you hire me?</h1>
                 )}
             </div>
 
+
             <div className={s.painel_direita}>
+                {lang === 'pt' ? (
+                    <h1 className={classe}>{conteudoCard[0]}</h1>
+                ) : (
+                    <h1 className={classe}>{conteudoCard[4]}</h1>
+                )}
+                  
+                {lang === 'pt' ? (
+                    <article className={classe} id='esq'>
+                        {conteudoCard[1]}
+                    </article>
+                ) : (
+                    <article className={classe} id='esq'>
+                        {conteudoCard[5]}
+                    </article>
+                )}
 
-                <article className={classe} id='esq'>
-                    {conteudoCard[0]}
-                </article>
-
-                <article className={classe} id='cima'>
-                    {conteudoCard[1]}
-                </article>
-                <article className={classe} id='dir'>
-                    {conteudoCard[2]}
-                </article>
+                {lang === 'pt' ? (
+                    <article className={classe} id='cima'>
+                        {conteudoCard[2]}
+                    </article>
+                ) : (
+                    <article className={classe} id='cima'>
+                        {conteudoCard[6]}
+                    </article>
+                )}
+                
+                {lang === 'pt' ? (
+                    <article className={classe} id='dir'>
+                        {conteudoCard[3]}
+                    </article>
+                ) : (
+                    <article className={classe} id='dir'>
+                        {conteudoCard[7]}
+                    </article>
+                )}
+                
+                
             </div>
         </section>
     )
