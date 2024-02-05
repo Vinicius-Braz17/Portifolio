@@ -3,7 +3,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 16px 25px;
+	padding: 10px 25px;
 	padding-right: 50px;
 	background-color: rgb(27, 27, 27);
 	border-bottom: 2px solid rgb(139, 77, 255);
@@ -42,7 +42,7 @@
 	padding: 8px;
 	line-height: normal;
 	text-wrap: wrap;
-	font-size: 19px;
+	font-size: 16px;
 	cursor: pointer;
 	text-align: center;
 	transition: all 0.6s;

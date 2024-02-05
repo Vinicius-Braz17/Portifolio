@@ -30,8 +30,7 @@ export default function Pag3Home({ lang }) {
                     setClasseSelecionada(['non_selected', 'non_selected', 'selected', 'non_selected', 'non_selected'])
                 }
                 else if (t === 4 && !(classeSelecionada[t - 1] === 'selected')) {
-                    let varTexto = ['quadrado 10', 'qua 11', 'qua 12']
-                    setConteudoCard(varTexto);
+                    setConteudoCard(textos[3])
                     setClasseSelecionada(['non_selected', 'non_selected', 'non_selected', 'selected', 'non_selected'])
                 }
                 else if (t === 5 && !(classeSelecionada[t - 1] === 'selected')) {
