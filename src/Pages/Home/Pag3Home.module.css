@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: 35%;
+    width: 32%;
     background-color: rgb(65, 65, 65);
     vertical-align: middle;
 }
@@ -59,7 +59,7 @@
     align-items: center;
     padding-left: 8.5%;
     height: 100%;
-    width: 65%;
+    width: 68%;
     background-color: rgb(138, 138, 138);
 }
 
@@ -69,13 +69,13 @@
     width: 100%;
     text-align: center;
     color: white;
-    font-size: 55px;
+    font-size: 65px;
 }
 
 .painel_direita article {
     background-color: white;
     box-shadow: 2px 2px 7px rgb(139, 77, 255);
-    margin: 20px;
+    margin: 13px;
     border-radius: 5px;
     width: 285px;
     height: 420px;
