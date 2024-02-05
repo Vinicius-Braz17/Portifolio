@@ -103,3 +103,28 @@
     width: 100%;
     text-align: center;
 }
+
+
+@media screen and (max-width: 1560px) {
+    .painel_direita article {
+        width: 240px;
+        height: 370px;
+    }
+    .painel_direita img {
+        height: 80px;
+    }
+    .painel_direita p {
+        font-size: 15px;
+    }
+    .introducao {
+        height: 600px;
+    }
+    .painel_esquerda .botoes_introducao {
+        font-size: 28px;   
+        margin: 35px 0 20px 35px; 
+    }
+    .painel_direita h1 {
+        top: 45px;
+        font-size: 48px;
+    }
+  }
