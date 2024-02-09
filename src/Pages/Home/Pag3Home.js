@@ -48,7 +48,7 @@ export default function Pag3Home({ lang }) {
     }
 
     return (
-        <section className={s.introducao}>
+        <section className={s.introducao} id='3'>
 
             <div className={s.painel_esquerda}>
                 <img alt='Foto profissional do Vinícius' className={s.foto_profissional} src={FOTO} />

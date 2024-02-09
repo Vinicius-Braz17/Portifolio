@@ -1,15 +1,15 @@
 import react from '../../images/FotoCurriculo.png'
-import br from '../../images/br.jpg'
 import js from '../../images/js.png'
 import java from '../../images/Java-Logo.png'
 import UAM from '../../images/CDC.jpg'
 import op from '../../images/procurando.png'
-import MA from '../../images/metAg.jpg'
 import Windows from '../../images/window.jpg'
 import git from '../../images/github.jpg'
 import aprendizado from '../../images/aprendizado.jpg'
 import comunication from '../../images/comunicacao.jpg'
 import raciocinio from '../../images/raciocinio.jpg'
+import prog from '../../images/apax.jpg'
+import ingles from '../../images/ing.jpg'
 
 export const textos = [
     [ /* Texto sobre mim em PORTUGUES */
@@ -32,19 +32,19 @@ export const textos = [
             <h3>Buscando oportunidades</h3>
             <hr></hr>
             <p>
-                Em busca de oportunidades para entrar no mercado de desenvolvimento Web (front e/ou back-end)
+                Em busca de oportunidades para entrar no mercado de desenvolvimento Web (front-end e/ou back-end)
             </p>
 
         </>
         ,
         <>
-            <img alt='imagem react' src={br} />
+            <img alt='imagem react' src={prog} />
 
-            <h3>Patriora</h3>
+            <h3>Programação</h3>
             <hr></hr>
 
             <p>
-                é o trikas e nao tem jeito
+                Sou um jovem de 18 anos apaixonado por programação e desenvolvimento de sistemas, sempre motivado para resolver problemas e aperfeicoar minhas habilidades
             </p>
         </>,
         /* Texto sobre mim em Inglês */
@@ -58,7 +58,7 @@ export const textos = [
             <hr></hr>
 
             <p>
-                Cursin bachareloors in <strong>computer science</strong> at Universidade Anhembi Morumbi (UAM)
+                Studying bachelor degree in <strong>computer science</strong> at Universidade Anhembi Morumbi (UAM)
             </p>
         </>
         ,
@@ -69,19 +69,19 @@ export const textos = [
             <hr></hr>
 
             <p>
-                Looking for opportunities to enter in the web development market (front or back-end)
+                Looking for opportunities to enter the web development market (front-end or back-end)
             </p>
 
         </>
         ,
         <>
-            <img alt='imagem react' src={br} />
+            <img alt='imagem react' src={prog} />
 
-            <h3>Ingles</h3>
+            <h3>Programming</h3>
             <hr></hr>
 
             <p>
-                is the trikas and theres no way
+                I'm a eigth years old boy who loves programming and software development, I'm always motivated to solve problems and improve my habilities
             </p>
         </>
     ],
@@ -90,15 +90,13 @@ export const textos = [
             Meus conhecimentos
         </>,
         <>
-            <img alt='imagem react' src={MA} />
+            <img alt='imagem react' src={ingles} />
 
-            <h3>Metodologias Ágeis</h3>
+            <h3>Inglês</h3>
             <hr></hr>
 
             <p>
-                Aplicação e acompanhamento de processos:<br></br>
-                - KanBan<br></br>
-                - Scrum
+                Conhecimento em fala, audição e escrita na língua inglesa
             </p>
 
         </>
@@ -121,7 +119,7 @@ export const textos = [
             <hr></hr>
 
             <p>
-                Organização de códigos para desenvolvimento e backup do projeto, aplicação pelo git bash
+                Organização de códigos para controle de versão a partir do Git, aplicação pelo git bash, powerSheel e CMD
             </p>
         </>,
 
@@ -130,13 +128,13 @@ export const textos = [
             My Knowlodges
         </>,
         <>
-            <img alt='imagem react' src={MA} />
+            <img alt='imagem react' src={ingles} />
 
-            <h3>Metodologias Ágeis</h3>
+            <h3>English</h3>
             <hr></hr>
 
             <p>
-                skills in KanBan, Scrum, 5S
+                English language's knowlodges in speaking, listening and writing
             </p>
 
         </>
@@ -148,7 +146,7 @@ export const textos = [
             <hr></hr>
 
             <p>
-                Knowledge of the Windows operating system, knowing CMD, PowerSheel and directory organization
+                Knowledge in Windows operating system, knowing CMD, PowerSheel and directory organization
             </p>
 
         </>,
@@ -159,7 +157,7 @@ export const textos = [
             <hr></hr>
 
             <p>
-                Organization (pushes and commits) of codes for project development and backup, application using git bash
+                Organization of codes to the version control from Git, application in git bash, powerSheel and CMD
             </p>
 
         </>
@@ -219,7 +217,7 @@ export const textos = [
                 Knowledge of the reactJS framework library for developing web interfaces using JavaScript
             </p>
             <i style={{ fontSize: '13px' }}>
-                This website is developed with ReactJS library
+                This website was developed with ReactJS library
             </i>
 
         </>
@@ -268,7 +266,7 @@ export const textos = [
             <hr></hr>
 
             <p>
-                Comunicação assertiva, clara e objetiva, bom relacionamento com pessoas, bom trabalho em grupo
+                Comunicação assertiva, clara e objetiva, habilidades interpessoais, bom trabalho em grupo
             </p>
         </>,
         <>
@@ -289,31 +287,31 @@ export const textos = [
         <>
             <img alt='imagem react' src={aprendizado} />
 
-            <h3>Aprendizado</h3>
+            <h3>Apprenticeship</h3>
             <hr></hr>
 
             <p>
-                Facilidade em aprender, aptidão para aprender sozinho, auto-ditada e muito ânimo e engajamento para aprender coisas novas e enfrentar desafios
+                Ease of learning, aptitude for learning alone, self-dictation and a lot of energy and engagement to learn new things and face challenges
             </p>
         </>,
         <>
             <img alt='imagem react' src={comunication} />
 
-            <h3>Comunicação e relacionamentos</h3>
+            <h3>Communication and relationships</h3>
             <hr></hr>
 
             <p>
-                Comunicação assertiva, clara e objetiva, bom relacionamento com pessoas, bom trabalho em grupo
+                Assertive communication, clear and objective, interpersonal skills, good teamwork 
             </p>
         </>,
         <>
             <img alt='imagem react' src={raciocinio} />
 
-            <h3>Raciocinio lógico</h3>
+            <h3>Logical reasoning</h3>
             <hr></hr>
 
             <p>
-                Habilidade em lidar com atividades e desafios lógicos, bom raciocinio matemático e aritmético e identificação de padrões
+                Ability to deal with logical activities and challenges, good mathematical and arithmetic reasoning and identification of patterns
             </p>
         </>
 

@@ -84,7 +84,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -101,7 +101,7 @@
 .painel_direita article hr {
     border: 1px solid rgb(0, 0, 0);
     width: 100%;
-    margin: -7px;
+    margin: 5px 0px;
 }
 /* .painel_direita article h3 {
     border-bottom: 1px solid grey;

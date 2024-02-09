@@ -1,5 +1,3 @@
-// import { useState } from 'react';
-// import { useEffect } from 'react';
 import s from './InicioHome.module.css'
 
 function InicioHome({ lang }) {
@@ -68,7 +66,25 @@ function InicioHome({ lang }) {
                 }
             }
     }
-    
+
+    function digitarNome() {
+        const nome = 'VINÍCIUS DO PRADO BRAZ'
+        const letrasNome = nome.split('')
+        var juncaoLetras = []
+        
+        console.log(letrasNome.toString());
+
+        for (let i = 0; i < letrasNome.length; i++) {
+            setTimeout(() => {
+                juncaoLetras.push(letrasNome[i])
+                const texto = juncaoLetras.join('')
+                document.querySelector("#titulo").innerHTML = texto
+            }, i*250)            
+        }
+             
+    }
+
+    digitarNome()   
     inciarlizarParticulas()
       
     return (
@@ -78,9 +94,9 @@ function InicioHome({ lang }) {
                     {particulas.map(a => (
                         a
                     ))}
-                <h1><b>VINÍCIUS DO PRADO BRAZ</b></h1>
-                {lang === "pt" ? (<p>Conheça mais</p>)
-                    : (<p>Learn More</p>)}
+                <h1><b id='titulo'></b></h1>
+                {lang === "pt" ? (<p>Venha me conheçer!</p>)
+                    : (<p>Come and know me!</p>)}
                 <p>👇👇👇</p>
             </div>
         </main>
