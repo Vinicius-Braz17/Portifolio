@@ -1,0 +1,34 @@
+.rodape {
+    width: 100%;
+    border: 1px solid black;
+    background-color: rgb(39, 39, 39);
+    padding: 55px 0;
+    color: white
+}
+
+.rodape div {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.rodape div img {
+    transition: all 0.4s;
+}
+
+.rodape div img:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 50px purple;
+}
+
+.rodape p {
+    margin: 0;
+    text-align: center;
+    color: rgb(228, 228, 228)
+}
+
+.iconeLinkedin {
+    height: 50px;
+    margin: 0 20px;
+}

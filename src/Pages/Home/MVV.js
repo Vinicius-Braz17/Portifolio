@@ -1,9 +1,9 @@
-import s from "./Pag2Home.module.css"
+import s from "./MVV.module.css"
 
 
-export default function Pag2Home({ lang }) {
+export default function MVV({ lang }) {
     return (
-        <section className={s.sessaoMVV} id='2'>
+        <section className={s.sessaoMVV} id='1'>
             {lang === 'pt' ? (<h1>Missão, visão e valores</h1>) : (<h1>Mission, Vision and Values</h1>)}
             <br></br>
             <div className={s.div_cards}>

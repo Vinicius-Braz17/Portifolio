@@ -81,7 +81,7 @@ export const textos = [
             <hr></hr>
 
             <p>
-                I'm a eigth years old boy who loves programming and software development, I'm always motivated to solve problems and improve my habilities
+                I'm a eigthteen years old boy who loves programming and software development, I'm always motivated to solve problems and improve my habilities
             </p>
         </>
     ],

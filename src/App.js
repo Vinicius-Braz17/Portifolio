@@ -1,9 +1,10 @@
 import Navegacao from './Pages/Navegacao';
 import InicioHome from './Pages/Home/InicioHome';
 import React, { useState } from 'react';
-import Pag2Home from './Pages/Home/Pag2Home';
-import Pag3Home from './Pages/Home/Pag3Home';
+import MVV from './Pages/Home/MVV';
+import SobreMim from './Pages/Home/SobreMim';
 import './App.css'
+import Rodape from './Pages/Rodape';
 
 function App() {
 
@@ -17,8 +18,9 @@ function App() {
   <>
    <Navegacao changeL={changeLanguage} language={language}/>
    <InicioHome lang={language}/>
-   <Pag2Home lang={language}/>
-   <Pag3Home lang={language}/>
+   <SobreMim lang={language}/>
+   <MVV lang={language}/>
+   <Rodape lang={language}/>
   </>
   );
 }

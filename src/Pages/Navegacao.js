@@ -13,29 +13,29 @@ function Navegacao({ changeL, language }) {
       <div className={s.divNavegacaoBotoes}>
 
         <p>{language === "pt" ? (
-          <Link Link to="2" spy={true} smooth={true} offset={-20} duration={500}>
+          <Link Link to="1" spy={true} smooth={true} offset={-20} duration={500}>
             Missão, visão, valores
           </Link>) : (
-          <Link to="2" spy={true} smooth={true} offset={20} duration={500}>
+          <Link to="1" spy={true} smooth={true} offset={20} duration={500}>
             Mission, vision, values
           </Link>
         )}
         </p>
 
         <p>{language === "pt" ? (
-          <Link Link to="3" spy={true} smooth={true} offset={-20} duration={500}>
-            Cursos complementares
+          <Link Link to="2" spy={true} smooth={true} offset={-20} duration={500}>
+            Sobre
           </Link>) : (
-          <Link Link to="3" spy={true} smooth={true} offset={-20} duration={500}>
-            Complementary courses
+          <Link Link to="2" spy={true} smooth={true} offset={-20} duration={500}>
+            About
           </Link>)}
         </p>
 
         <p>{language === "pt" ? (
-          <Link Link to="4" spy={true} smooth={true} offset={-20} duration={500}>
+          <Link Link to="3" spy={true} smooth={true} offset={-20} duration={500}>
             Contato
           </Link>) : (
-          <Link Link to="4" spy={true} smooth={true} offset={-20} duration={500}>
+          <Link Link to="3" spy={true} smooth={true} offset={-20} duration={500}>
             Contact
           </Link>)}
         </p>

@@ -1,9 +1,9 @@
 import { useState } from "react"
-import s from "./Pag3Home.module.css"
+import s from "./SobreMim.module.css"
 import FOTO from '../../images/FOTO.jpg'
 import { textos } from "./info"
 
-export default function Pag3Home({ lang }) {
+export default function SobreMim({ lang }) {
 
     const [classe, setClasse] = useState(['fade-in', ''])
     const [classeSelecionada, setClasseSelecionada] = useState(['selected', 'non_selected', 'non_selected', 'non_selected', 'non_selected'])
@@ -48,7 +48,7 @@ export default function Pag3Home({ lang }) {
     }
 
     return (
-        <section className={s.introducao} id='3'>
+        <section className={s.introducao} id='2'>
 
             <div className={s.painel_esquerda}>
                 <img alt='Foto profissional do Vinícius' className={s.foto_profissional} src={FOTO} />
