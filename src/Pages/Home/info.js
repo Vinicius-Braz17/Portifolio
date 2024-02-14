@@ -1,4 +1,4 @@
-import react from '../../images/FotoCurriculo.png'
+import react from '../../images/reactIcon.png'
 import js from '../../images/js.png'
 import java from '../../images/Java-Logo.png'
 import UAM from '../../images/CDC.jpg'
@@ -256,7 +256,7 @@ export const textos = [
             <hr></hr>
 
             <p>
-                Facilidade em aprender, aptidão para aprender sozinho, auto-ditada e muito ânimo e engajamento para aprender coisas novas e enfrentar desafios
+                Facilidade e aptidão para aprender, auto-ditada e muito ânimo e energia para aprender coisas novas e enfrentar desafios
             </p>
         </>,
         <>
@@ -291,7 +291,7 @@ export const textos = [
             <hr></hr>
 
             <p>
-                Ease of learning, aptitude for learning alone, self-dictation and a lot of energy and engagement to learn new things and face challenges
+                Ease and aptitude for learning, self-dictation and a lot of energy and engagement to learn new things and face challenges
             </p>
         </>,
         <>

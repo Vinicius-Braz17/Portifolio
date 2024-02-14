@@ -1,6 +1,6 @@
 import s from "./Navegacao.module.css";
 import { Link } from 'react-scroll'
-import icone from "../images/FotoCurriculo.png";
+import icone from "../images/reactIcon.png";
 import BR from "../images/br.jpg";
 import USA from "../images/eua.jpg";
 

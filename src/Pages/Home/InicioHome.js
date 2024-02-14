@@ -1,8 +1,10 @@
 import s from './InicioHome.module.css'
+import { useState, useEffect } from 'react';
 
 function InicioHome({ lang }) {
 
     var particulas = []
+    const [clas, setClas] = useState('fade-out');
 
     function inciarlizarParticulas() {
             for (let i = 0; i < 450; i++) { 
@@ -81,10 +83,12 @@ function InicioHome({ lang }) {
                 document.querySelector("#titulo").innerHTML = texto
             }, i*250)            
         }
+
+        setClas("come")       
              
     }
 
-    digitarNome()   
+    useEffect(digitarNome)   
     inciarlizarParticulas()
       
     return (
@@ -95,9 +99,9 @@ function InicioHome({ lang }) {
                         a
                     ))}
                 <h1><b id='titulo'></b></h1>
-                {lang === "pt" ? (<p>Venha me conheçer!</p>)
-                    : (<p>Come and know me!</p>)}
-                <p>👇👇👇</p>
+                {lang === "pt" ? (<p class={clas}>Venha me conheçer!</p>)
+                    : (<p class={clas}>Come and know me!</p>)}
+                <p class={clas}>👇👇👇</p>
             </div>
         </main>
     )
