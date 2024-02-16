@@ -1,8 +1,8 @@
 import Navegacao from './Pages/Navegacao';
-import InicioHome from './Pages/Home/InicioHome';
+import InicioHome from './Pages/InicioHome';
 import React, { useState } from 'react';
-import MVV from './Pages/Home/MVV';
-import SobreMim from './Pages/Home/SobreMim';
+import MVV from './Pages/MVV';
+import SobreMim from './Pages/SobreMim';
 import './App.css'
 import Rodape from './Pages/Rodape';
 

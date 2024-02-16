@@ -30,7 +30,7 @@
 .rodape .sesaoIcones div .reactIcon {
     height: 220px;
     margin: 0 auto;
-    transition: all 4s;
+    transition: all 3.5s;
     cursor: pointer;
 }
 

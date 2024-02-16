@@ -1,6 +1,6 @@
 import { useState } from "react"
 import s from "./SobreMim.module.css"
-import FOTO from '../../images/FOTO.jpg'
+import FOTO from '../images/FOTO.jpg'
 import { textos } from "./info"
 
 export default function SobreMim({ lang }) {
