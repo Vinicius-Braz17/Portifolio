@@ -112,8 +112,6 @@ export default function SobreMim({ lang }) {
                         {conteudoCard[7]}
                     </article>
                 )}
-
-
             </div>
         </section>
     )

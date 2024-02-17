@@ -37,7 +37,7 @@ export default function Rodape({lang}) {
             </section>
             <section className={s.sessaoMenssagem}>
                 <form action="https://formsubmit.co/godinhobraz@gmail.com" method='POST'>
-                    <h1>Deixe seu email com uma mensagem para mim</h1><br></br>
+                    <h1>Deixe uma mensagem para mim</h1><br></br>
                     <label>Nome: </label><br></br>
                     <input autocomplete="off" placeholder='Digite aqui o seu nome' type="text" name="name" required /><br></br><br></br>
                     <label>Email: </label><br></br>

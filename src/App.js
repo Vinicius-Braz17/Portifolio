@@ -5,6 +5,7 @@ import MVV from './Pages/MVV';
 import SobreMim from './Pages/SobreMim';
 import './App.css'
 import Rodape from './Pages/Rodape';
+import BotaoBackToTop from './Elementos/BotaoBackToTop';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
    <SobreMim lang={language}/>
    <MVV lang={language}/>
    <Rodape lang={language}/>
+   <BotaoBackToTop />
   </>
   );
 }

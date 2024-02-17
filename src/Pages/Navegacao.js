@@ -7,7 +7,7 @@ import USA from "../images/eua.jpg";
 function Navegacao({ changeL, language }) {
 
   return (
-    <nav className={s.navegacao}>
+    <nav className={s.navegacao} id='0'>
 
       <img className={s.fotoNav} src={icone} alt="Icone Currículo navegação" />
       <div className={s.divNavegacaoBotoes}>
