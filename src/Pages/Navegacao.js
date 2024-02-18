@@ -6,11 +6,26 @@ import USA from "../images/eua.jpg";
 
 function Navegacao({ changeL, language }) {
 
+  function spin(e) {
+    const elemento = document.getElementById(e.target.id)
+
+    elemento.style.transform += 'rotate(360deg)'
+}
+
   return (
     <nav className={s.navegacao} id='0'>
 
-      <img className={s.fotoNav} src={icone} alt="Icone Currículo navegação" />
+      <img className={s.fotoNav} onClick={spin} id='icone_react_nav' src={icone} alt="Icone Currículo navegação" />
       <div className={s.divNavegacaoBotoes}>
+
+        <p>{language === "pt" ? (
+          <Link Link to="2" spy={true} smooth={true} offset={-20} duration={500}>
+            Sobre
+          </Link>) : (
+          <Link Link to="2" spy={true} smooth={true} offset={-20} duration={500}>
+            About
+          </Link>)}
+        </p>
 
         <p>{language === "pt" ? (
           <Link Link to="1" spy={true} smooth={true} offset={-20} duration={500}>
@@ -20,15 +35,6 @@ function Navegacao({ changeL, language }) {
             Mission, vision, values
           </Link>
         )}
-        </p>
-
-        <p>{language === "pt" ? (
-          <Link Link to="2" spy={true} smooth={true} offset={-20} duration={500}>
-            Sobre
-          </Link>) : (
-          <Link Link to="2" spy={true} smooth={true} offset={-20} duration={500}>
-            About
-          </Link>)}
         </p>
 
         <p>{language === "pt" ? (

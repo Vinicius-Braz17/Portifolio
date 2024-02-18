@@ -119,7 +119,7 @@ export const textos = [
             <hr></hr>
 
             <p>
-                Organização de códigos para controle de versão a partir do Git, aplicação pelo git bash, powerSheel e CMD
+                Conhecimento na plataforma GitHub, organização de códigos para controle de versão a partir do Git, aplicação pelo git bash, powerSheel e CMD
             </p>
         </>,
 
@@ -157,7 +157,7 @@ export const textos = [
             <hr></hr>
 
             <p>
-                Organization of codes to the version control from Git, application in git bash, powerSheel and CMD
+                Skills in GitHub plataform, organization of codes to the version control from Git, application in git bash, powerSheel and CMD
             </p>
 
         </>

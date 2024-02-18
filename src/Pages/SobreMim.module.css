@@ -32,23 +32,43 @@
 
 .painel_esquerda .botoes_introducao {
     margin: 35px 0 35px 35px;
+    /* border: 1px solid white; */
     font-size: 35px;
-    transition: all 0.3s;
+    padding: 5px 0;
+    transition: all 0.4s;
     cursor: pointer;
     width: fit-content;
     color: white;
     text-decoration-color: rgb(139, 77, 255);
+    overflow: hidden;
+}
+
+.painel_esquerda .botoes_introducao::after {
+    content: '';
+	position: absolute;
+	top: 94%;
+	left: -100%;
+	z-index: 1;
+	width: 100%;
+	height: 6%;
+	background-color: rgb(132, 0, 255);
+	transition: all 0.4s;
+}
+
+.painel_esquerda .botoes_introducao:hover::after {
+    left: 0%
 }
 
 .painel_esquerda .botoes_introducao:hover {
     transform: translateX(10px);
-    text-decoration: underline 3px rgb(139, 77, 255);
+    /* text-decoration: underline 3px rgb(139, 77, 255); */
     text-shadow: 0 -2px 15px rgb(138, 75, 255);
 }
 
 .painel_esquerda .botoes_introducao:active {
-    text-decoration: underline 3px rgb(5, 197, 255);
+    /* text-decoration: underline 3px rgb(5, 197, 255); */
     transition: none;
+    overflow: visible;
     text-shadow: -2px -2px 17px rgb(5, 197, 255);
 }
 

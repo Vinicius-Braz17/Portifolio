@@ -22,11 +22,12 @@ export default function Rodape({lang}) {
                 <br></br>
                 <hr></hr>
                 <br></br>
+                {/* Botões/ícones de contato */}
                 <div className={s.divIcones}>
-                    <a rel="noreferrer" href='https://www.linkedin.com/in/vin%C3%ADcius-braz/' target='_blank'><img alt='icone footer' className={s.iconesRodape} src={link}></img></a>
-                    <a rel='noreferrer' href='https://api.whatsapp.com/send/?phone=11997540828&text&type=phone_number&app_absent=0' target='_blank'><img alt='icone footer' style={{borderRadius: '9px'}}className={s.iconesRodape} src={wpp}></img></a>
+                    <a rel="noreferrer" href='https://www.linkedin.com/in/vin%C3%ADcius-braz/' target='_blank'><img title="Clique para ver o meu Linkedin" alt='Icone footer linkedin' className={s.iconesRodape} src={link}></img></a>
+                    <a rel='noreferrer' href='https://api.whatsapp.com/send/?phone=11997540828&text&type=phone_number&app_absent=0' target='_blank'><img title="Clique para me chamar no WhatsApp" alt='Icone footer whatsapp' style={{borderRadius: '9px'}}className={s.iconesRodape} src={wpp}></img></a>
                     <a href='mailto: vini.p.braz@hotmail.com'>
-                        <img alt='icone footer' className={s.iconesRodape} src={email} />
+                        <img title="Clique para me mandar um email" alt='icone footer email' className={s.iconesRodape} src={email} />
                     </a>
                 </div>
                 <br></br>
@@ -36,6 +37,7 @@ export default function Rodape({lang}) {
                 
             </section>
             <section className={s.sessaoMenssagem}>
+                {/* Formulário de envio de email */}
                 <form action="https://formsubmit.co/godinhobraz@gmail.com" method='POST'>
                     <h1>Deixe uma mensagem para mim</h1><br></br>
                     <label>Nome: </label><br></br>

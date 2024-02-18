@@ -67,12 +67,6 @@ export default function SobreMim({ lang }) {
 
                 <h1 className={s.botoes_introducao} id={classeSelecionada[2]} onClick={() => show(3)}>Hard Skills</h1>
                 <h1 className={s.botoes_introducao} id={classeSelecionada[3]} onClick={() => show(4)}>Soft Skills</h1>
-
-                {lang === 'pt' ? (
-                    <h1 className={s.botoes_introducao} id={classeSelecionada[4]} onClick={() => show(5)}>Por quê me contratar?</h1>
-                ) : (
-                    <h1 className={s.botoes_introducao} id={classeSelecionada[4]} onClick={() => show(5)}>Why should you hire me?</h1>
-                )}
             </div>
 
 
