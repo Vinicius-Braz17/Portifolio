@@ -15,6 +15,17 @@
 }
 
 #selected {
-    text-shadow: 0 -2px 15px rgb(138, 75, 255);
+    text-shadow: 0 -2px 15px rgb(152, 42, 255);
+}
+
+.selectedP {
+    background-color: rgb(152, 42, 255);
+    border: 3.5px solid rgb(202, 202, 202);
+    /* border: none; */
+}
+
+.nonSelectedP {
+    background-color: white;
+    border: none;
 }
 

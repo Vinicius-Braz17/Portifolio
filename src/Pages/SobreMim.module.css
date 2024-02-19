@@ -2,8 +2,8 @@
     position: relative;
     display: flex;
     align-items: flex-start;
-    border-top: 5px solid rgb(139, 77, 255);
-    height: 780px;
+	border-bottom: 3.5px solid rgb(139, 77, 255);
+    height: 800px;
 }
 
 .painel_esquerda .foto_profissional {
@@ -149,7 +149,7 @@
         font-size: 15px;
     }
     .introducao {
-        height: 650px;
+        height: 700px;
     }
     .painel_esquerda .botoes_introducao {
         font-size: 28px;   

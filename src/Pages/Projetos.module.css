@@ -1,0 +1,50 @@
+.projetos {
+    width: 100%;
+    height: 750px;
+    background-color: white;
+    text-align: center;
+}
+
+.projetos .tituloProjetos{
+    margin: 40px 0;
+}
+
+.projetos .tituloProjetos h1 {
+    font-size: 60px;
+    width: fit-content;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(152, 41, 255), rgb(86, 0, 199));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projetos .tituloProjetos p {
+    font-size: 15px;
+    margin: 12px auto;
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+.projetos .navegacaoProjetos {
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+    border-radius: 80px;
+    width: fit-content;
+}
+
+.projetos .navegacaoProjetos button {
+    border-radius: 80px;
+    box-sizing: border-box;
+    width: 180px;
+    height: 65px;
+    font-size: 22px;
+    transition: all 0.3s;
+}
+
+.projetos .navegacaoProjetos button:hover {
+    text-decoration: underline 4px rgb(152, 42, 255);
+    transition: none;
+}
