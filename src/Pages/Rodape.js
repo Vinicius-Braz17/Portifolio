@@ -45,7 +45,7 @@ export default function Rodape({lang}) {
                     <label>Email: </label><br></br>
                     <input autocomplete="off" placeholder='Deixe aqui um email' type="email" name="email" required /><br></br><br></br>
                     <label>Mensagem: </label><br></br>
-                    <textarea style={{height: "90px"}}autocomplete="off" placeholder="Digite uma mensagem para mim" type="textarea" name="message" required />
+                    <textarea style={{height: "90px"}} autocomplete="off" placeholder="Digite uma mensagem para mim" type="textarea" name="message" required />
                     <br></br>
                     <br></br>
                     <button type="submit">Enviar</button>

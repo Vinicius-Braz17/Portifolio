@@ -46,7 +46,7 @@ Easter-Egg: todos os logos do React presentes na página contém uma animação 
 
     Missão, visão e valores: 3ª seção do site, são expostos 3 cards com efeito de hover-flip, o primeiro mostra a minha missão, o meu objetivo como profissional, qual o sentido do meu trabalho. O segundo card mostra minha visão, como me vejo atuando nesta área em algum tempo, qual o meu sonho de realização profissional. E o terceiro mostra os meus valores, meus princípios, o que eu valorizo de comportamentos profissionalmente
 
-    Projetos:
+    Projetos: Módulo que mostra os meus projetos pessoais/acadêmicos, tem um menu de navegação vertical com os nomes de cada projeto, e o conteúdo é mostrado em uma section dividido em duas partes, uma de imagens (esquerda), e outra com a descrição e tecnologias utilizadas no projeto (direita)
 
     Contato: ultima parte do site, consiste em um elemento Footer extendido, na parte da direita contém um icone do React (animado com spin), meu nome, ano de desenvolvimento do projeto e meus meios de comunicação (Linkedin, WhatsApp e Email). Na parte da esquerda possui uma ferramenta de mensagens via formulário HTML, foi utilizado o site form Submit (https://formsubmit.co), o usuário preenche o formulário com nome, email e mensagem, e estas informações chegam em meu email.
 
@@ -55,5 +55,5 @@ Easter-Egg: todos os logos do React presentes na página contém uma animação 
 
 - Finalizar os textos em português e inglês
 - Revisar textos
-- Criar descrição do conteúdo do módulo de projetos
-- Testar fundo cinza nos titulos de projetos
+- Finalizar a parte da direita de projetos
+- Centralizar conteúdo de projetos em uma variável exportada em um arquivo sozinho (igual ao "infoSobreMim")

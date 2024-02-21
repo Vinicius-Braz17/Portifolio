@@ -24,8 +24,10 @@
 	height: 42px;
 	vertical-align: middle;
 	transition: all 0.2s;
-	cursor: pointer;
+	cursor: grab;
     transition: all 3.5s;
+} .navegacao .fotoNav:active {
+	cursor: grabbing;
 }
 
 .navegacao .divNavegacaoBotoes p {

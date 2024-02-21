@@ -31,7 +31,9 @@
     height: 220px;
     margin: 0 auto;
     transition: all 3.5s;
-    cursor: pointer;
+    cursor: grab;
+} .rodape .sesaoIcones div .reactIcon:active {
+    cursor: grabbing;
 }
 
 .rodape .sesaoIcones div h1 {

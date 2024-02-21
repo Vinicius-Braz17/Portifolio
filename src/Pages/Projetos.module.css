@@ -1,16 +1,17 @@
 .projetos {
+    position: relative;
     width: 100%;
-    height: 750px;
     background-color: white;
     text-align: center;
+    border: 2px solid rgb(255, 0, 0);
 }
 
 .projetos .tituloProjetos{
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .projetos .tituloProjetos h1 {
-    font-size: 60px;
+    font-size: 55px;
     width: fit-content;
     margin: 0 auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -21,7 +22,7 @@
 
 .projetos .tituloProjetos p {
     font-size: 15px;
-    margin: 12px auto;
+    margin: 7px auto;
     width: 50%;
     /* border: 1px solid black; */
 }
@@ -38,9 +39,9 @@
 .projetos .navegacaoProjetos button {
     border-radius: 80px;
     box-sizing: border-box;
-    width: 180px;
+    width: 210px;
     height: 65px;
-    font-size: 22px;
+    font-size: 19px;
     transition: all 0.3s;
 }
 
@@ -48,3 +49,65 @@
     text-decoration: underline 4px rgb(152, 42, 255);
     transition: none;
 }
+
+.projetos .descProjetos {
+    position: relative;
+    box-shadow: 5px 5px 10px rgb(134, 134, 134);;
+    margin: 40px auto;
+    width: 68%;
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgb(216, 181, 255);
+}
+
+.projetos .descProjetos .images {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.projetos .descProjetos .images input {
+    display: none;
+}
+
+.projetos .descProjetos .images .divImagens {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    display: flex;
+    height: 350px;
+    width: 325px;
+    overflow: hidden;
+    border: 7px inset rgb(195, 132, 255);
+}
+
+.projetos .descProjetos .images .divImagens img {
+    height: 343px;
+    width: 318px;
+    transform: translateX(0);
+    transition: all 0.6s;
+}
+
+.projetos .descProjetos .images .navegacaoImagens{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.projetos .descProjetos .images .navegacaoImagens label {
+    height:20px;
+    width:20px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 5px;
+    border-radius: 20px;
+    background-color: white;
+} .projetos .descProjetos .images .navegacaoImagens label:hover {
+    background-color: rgb(28, 223, 230);
+}
+
