@@ -1,11 +1,16 @@
 import { useState } from "react";
 import s from "./Projetos.module.css";
-import j1 from "../images/javaBet1.jpg";
-import j2 from "../images/javaBet2.jpg";
-import j3 from "../images/javaBet3.jpg";
-import j4 from "../images/javaBet4.jpg";
+import { infoProjetos } from "./infoProjetos.js";
+import link from "../images/linkedin.svg";
+import wpp from "../images/whatsapp.svg";
+import email from "../images/envelope-fill.svg";
+import { FaGithub } from "react-icons/fa";
+import { HiExternalLink } from "react-icons/hi";
 
 export default function Projetos({ lang }) {
+  let elemento = new Array(infoProjetos[0][0]).fill("elemento");
+
+  const [selectedProject, setselectedProject] = useState(infoProjetos[0][1]);
   const [selectedClass, setSelectedClass] = useState([
     "butao1",
     "selectedP",
@@ -36,15 +41,17 @@ export default function Projetos({ lang }) {
   }
 
   function passarImagens(e) {
-    const trans = "translateX(-" + ((e.target.id - 1) * 318) + "px)"
-    const elemento = document.getElementsByClassName("img");
-    let cont = 0
-    
-   while (cont < elemento.length) {
-       elemento[cont].style.transform = trans;
-       cont++
+    const trans = "translateX(-" + e.target.id * 318 + "px)";
+    const im = document.getElementsByClassName("img");
+    let cont = 0;
+
+    document.getElementById("numeroPagina").innerHTML =
+      parseInt(e.target.id) + 1 + "/" + im.length;
+
+    while (cont < im.length) {
+      im[cont].style.transform = trans;
+      cont++;
     }
-    
   }
 
   return (
@@ -70,18 +77,59 @@ export default function Projetos({ lang }) {
       </nav>
       <section className={s.descProjetos}>
         <div className={s.images}>
-          <div className={s.divImagens}>
-            <img alt="imagensProjetos" className='img' src={j1} />
-            <img alt="imagensProjetos" className='img' src={j2} />
-            <img alt="imagensProjetos" className='img' src={j3} />
-            <img alt="imagensProjetos" className='img' src={j4} />
-          </div>
+          <div className={s.divImagens}>{selectedProject}</div>
 
           <div className={s.navegacaoImagens}>
-            <label onClick={passarImagens} id="1"></label>
-            <label onClick={passarImagens} id="2"></label>
-            <label onClick={passarImagens} id="3"></label>
-            <label onClick={passarImagens} id="4"></label>
+            {/* <label onClick={passarImagens} id='1'></label>
+             <label onClick={passarImagens} id='2'></label>
+             <label onClick={passarImagens} id='3'></label>
+             <label onClick={passarImagens} id='4'></label> */}
+            <b id="numeroPagina">1/{infoProjetos[0][0]}</b>
+            <br></br>
+            {elemento.map((a, index) => {
+              return (
+                <label
+                  onClick={passarImagens}
+                  id={index}
+                  name={"label"}
+                ></label>
+              );
+            })}
+          </div>
+        </div>
+        <div className={s.descricao}>
+          <h1>Calculadora</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of typ.
+          </p>
+          <div>
+            <p>Tecnologias utilizadas:</p>
+            {/*Ícones das gracinha*/}
+            <img
+              title="Clique para ver o meu Linkedin"
+              alt="Icone footer linkedin"
+              className={s.iconesRodape}
+              src={link}
+            ></img>
+            <img
+              title="Clique para me chamar no WhatsApp"
+              alt="Icone footer whatsapp"
+              style={{ borderRadius: "9px" }}
+              className={s.iconesRodape}
+              src={wpp}
+            ></img>
+            <img
+              title="Clique para me mandar um email"
+              alt="icone footer email"
+              className={s.iconesRodape}
+              src={email}
+            />
+          </div>
+          <div className={s.divBotoes}>
+            <article className={s.linkExterno}><HiExternalLink /></article>
+            <article className={s.linkExterno}><FaGithub /></article>
           </div>
         </div>
       </section>

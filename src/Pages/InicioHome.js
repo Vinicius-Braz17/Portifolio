@@ -73,8 +73,6 @@ function InicioHome({ lang }) {
         const nome = 'VINÍCIUS DO PRADO BRAZ'
         const letrasNome = nome.split('')
         var juncaoLetras = []
-        
-        console.log(letrasNome.toString());
 
         for (let i = 0; i < letrasNome.length; i++) {
             setTimeout(() => {

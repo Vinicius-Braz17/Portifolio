@@ -41,11 +41,11 @@ export default function Rodape({lang}) {
                 <form action="https://formsubmit.co/godinhobraz@gmail.com" method='POST'>
                     <h1>Deixe uma mensagem para mim</h1><br></br>
                     <label>Nome: </label><br></br>
-                    <input autocomplete="off" placeholder='Digite aqui o seu nome' type="text" name="name" required /><br></br><br></br>
+                    <input autoComplete="off" placeholder='Digite aqui o seu nome' type="text" name="name" required /><br></br><br></br>
                     <label>Email: </label><br></br>
-                    <input autocomplete="off" placeholder='Deixe aqui um email' type="email" name="email" required /><br></br><br></br>
+                    <input autoComplete="off" placeholder='Deixe aqui um email' type="email" name="email" required /><br></br><br></br>
                     <label>Mensagem: </label><br></br>
-                    <textarea style={{height: "90px"}} autocomplete="off" placeholder="Digite uma mensagem para mim" type="textarea" name="message" required />
+                    <textarea style={{height: "90px"}} autoComplete="off" placeholder="Digite uma mensagem para mim" type="textarea" name="message" required />
                     <br></br>
                     <br></br>
                     <button type="submit">Enviar</button>
