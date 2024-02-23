@@ -1,16 +1,17 @@
 import { useState } from "react";
 import s from "./Projetos.module.css";
 import { infoProjetos } from "./infoProjetos.js";
-import link from "../images/linkedin.svg";
-import wpp from "../images/whatsapp.svg";
-import email from "../images/envelope-fill.svg";
-import { FaGithub } from "react-icons/fa";
-import { HiExternalLink } from "react-icons/hi";
 
 export default function Projetos({ lang }) {
-  let elemento = new Array(infoProjetos[0][0]).fill("elemento");
+  const [labels, setLabels] = useState(infoProjetos[0][0]);
 
-  const [selectedProject, setselectedProject] = useState(infoProjetos[0][1]);
+  let elemento = new Array(labels).fill(labels);
+  console.log(elemento.toString());
+
+  const [selectedImage, setselectedImage] = useState(infoProjetos[0][1]);
+  const [selectedDescricao, setSelectedDescricao] = useState(
+    infoProjetos[0][2]
+  );
   const [selectedClass, setSelectedClass] = useState([
     "butao1",
     "selectedP",
@@ -22,21 +23,32 @@ export default function Projetos({ lang }) {
   function changeB(e) {
     if (selectedClass[0] !== e.target.id) {
       switch (e.target.id) {
-        case "butao1":
-          newClasses = ["butao1", "selectedP", "nonSelectedP", "nonSelectedP"];
+        case "1":
+          newClasses = ["1", "selectedP", "nonSelectedP", "nonSelectedP"];
           setSelectedClass(newClasses);
           break;
-        case "butao2":
-          newClasses = ["butao2", "nonSelectedP", "selectedP", "nonSelectedP"];
+        case "2":
+          newClasses = ["2", "nonSelectedP", "selectedP", "nonSelectedP"];
           setSelectedClass(newClasses);
           break;
-        case "butao3":
-          newClasses = ["butao3", "nonSelectedP", "nonSelectedP", "selectedP"];
+        case "3":
+          newClasses = ["3", "nonSelectedP", "nonSelectedP", "selectedP"];
           setSelectedClass(newClasses);
           break;
         default:
           break;
       }
+
+      const im = document.getElementsByClassName("img");
+      let cont = 0;
+      while (cont < im.length) {
+        im[cont].style.transform = "translateX(0)";
+        cont++;
+      }
+
+      setselectedImage(infoProjetos[parseInt(e.target.id) - 1][1]);
+      setSelectedDescricao(infoProjetos[parseInt(e.target.id) - 1][2]);
+      setLabels(infoProjetos[parseInt(e.target.id) - 1][0]);
     }
   }
 
@@ -65,25 +77,21 @@ export default function Projetos({ lang }) {
         </p>
       </div>
       <nav className={s.navegacaoProjetos}>
-        <button onClick={changeB} class={selectedClass[1]} id="butao1">
+        <button onClick={changeB} class={selectedClass[1]} id="1">
           Calculadora
         </button>
-        <button onClick={changeB} class={selectedClass[2]} id="butao2">
+        <button onClick={changeB} class={selectedClass[2]} id="2">
           Java.Bet
         </button>
-        <button onClick={changeB} class={selectedClass[3]} id="butao3">
+        <button onClick={changeB} class={selectedClass[3]} id="3">
           FrubFy
         </button>
       </nav>
       <section className={s.descProjetos}>
         <div className={s.images}>
-          <div className={s.divImagens}>{selectedProject}</div>
+          <div className={s.divImagens}>{selectedImage}</div>
 
           <div className={s.navegacaoImagens}>
-            {/* <label onClick={passarImagens} id='1'></label>
-             <label onClick={passarImagens} id='2'></label>
-             <label onClick={passarImagens} id='3'></label>
-             <label onClick={passarImagens} id='4'></label> */}
             <b id="numeroPagina">1/{infoProjetos[0][0]}</b>
             <br></br>
             {elemento.map((a, index) => {
@@ -97,41 +105,7 @@ export default function Projetos({ lang }) {
             })}
           </div>
         </div>
-        <div className={s.descricao}>
-          <h1>Calculadora</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of typ.
-          </p>
-          <div>
-            <p>Tecnologias utilizadas:</p>
-            {/*Ícones das gracinha*/}
-            <img
-              title="Clique para ver o meu Linkedin"
-              alt="Icone footer linkedin"
-              className={s.iconesRodape}
-              src={link}
-            ></img>
-            <img
-              title="Clique para me chamar no WhatsApp"
-              alt="Icone footer whatsapp"
-              style={{ borderRadius: "9px" }}
-              className={s.iconesRodape}
-              src={wpp}
-            ></img>
-            <img
-              title="Clique para me mandar um email"
-              alt="icone footer email"
-              className={s.iconesRodape}
-              src={email}
-            />
-          </div>
-          <div className={s.divBotoes}>
-            <article className={s.linkExterno}><HiExternalLink /></article>
-            <article className={s.linkExterno}><FaGithub /></article>
-          </div>
-        </div>
+        <div className={s.descricao}>{selectedDescricao}</div>
       </section>
     </section>
   );

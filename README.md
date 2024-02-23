@@ -55,5 +55,5 @@ Easter-Egg: todos os logos do React presentes na página contém uma animação 
 
 - Finalizar os textos em português e inglês
 - Revisar textos
-- Finalizar a parte da direita de projetos
 - Centralizar conteúdo de projetos em uma variável exportada em um arquivo sozinho (igual ao "infoSobreMim")
+- Resolver problema do texto da label que deve conter o numero da primeira imagens / numero de imagens ao selecionar outro projeto
