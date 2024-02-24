@@ -3,10 +3,8 @@ import s from "./Projetos.module.css";
 import { infoProjetos } from "./infoProjetos.js";
 
 export default function Projetos({ lang }) {
-  const [labels, setLabels] = useState(infoProjetos[0][0]);
-
+  const [labels, setLabels] = useState(infoProjetos[0][0]); 
   let elemento = new Array(labels).fill(labels);
-  console.log(elemento.toString());
 
   const [selectedImage, setselectedImage] = useState(infoProjetos[0][1]);
   const [selectedDescricao, setSelectedDescricao] = useState(
@@ -22,6 +20,7 @@ export default function Projetos({ lang }) {
 
   function changeB(e) {
     if (selectedClass[0] !== e.target.id) {
+      
       switch (e.target.id) {
         case "1":
           newClasses = ["1", "selectedP", "nonSelectedP", "nonSelectedP"];
@@ -41,14 +40,18 @@ export default function Projetos({ lang }) {
 
       const im = document.getElementsByClassName("img");
       let cont = 0;
+
       while (cont < im.length) {
         im[cont].style.transform = "translateX(0)";
         cont++;
-      }
-
+      }      
+      
       setselectedImage(infoProjetos[parseInt(e.target.id) - 1][1]);
       setSelectedDescricao(infoProjetos[parseInt(e.target.id) - 1][2]);
       setLabels(infoProjetos[parseInt(e.target.id) - 1][0]);
+
+      document.getElementById("numeroPagina").innerHTML =
+      1 + "/" + infoProjetos[parseInt(e.target.id) - 1][0];
     }
   }
 
@@ -58,11 +61,14 @@ export default function Projetos({ lang }) {
     let cont = 0;
 
     document.getElementById("numeroPagina").innerHTML =
-      parseInt(e.target.id) + 1 + "/" + im.length;
+    parseInt(e.target.id) + 1 + "/" + im.length;
 
     while (cont < im.length) {
       im[cont].style.transform = trans;
       cont++;
+    }
+    if (document.querySelector("video")) {
+      document.querySelector("video").style.transform += "scale(108%)";
     }
   }
 
