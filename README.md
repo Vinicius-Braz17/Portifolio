@@ -62,6 +62,5 @@ ultima parte do site, consiste em um elemento Footer extendido, na parte da dire
 
 ### Para fazer
 
-- Finalizar os textos em português e inglês
 - Revisar textos
-- Finalizar conteudo dos projetos
+- Finalizar os textos em português e inglês

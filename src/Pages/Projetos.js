@@ -68,7 +68,7 @@ export default function Projetos({ lang }) {
       cont++;
     }
     if (document.querySelector("video")) {
-      document.querySelector("video").style.transform += "scale(108%)";
+      document.querySelector("video").style.transform += "scale(106%)";
     }
   }
 
