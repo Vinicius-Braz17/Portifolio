@@ -14,7 +14,7 @@ export default function Rodape({lang}) {
     }
     
     return (
-        <footer className={s.rodape} id='3'>
+        <footer className={s.rodape} id='4'>
             <section className={s.sesaoIcones}>
                 <div className={s.divSesaoIcones}>
                     <img alt='imagem react fim da pagina' onClick={spin} id='reactIcon' title='Click to spin' className={s.reactIcon} src={icone}/>

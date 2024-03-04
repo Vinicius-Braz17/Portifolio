@@ -1,26 +1,38 @@
 import { useState } from "react";
 import s from "./Projetos.module.css";
 import { infoProjetos } from "./infoProjetos.js";
+import { useEffect } from "react";
 
 export default function Projetos({ lang }) {
-  const [labels, setLabels] = useState(infoProjetos[0][0]); 
+  const [labels, setLabels] = useState(infoProjetos[0][0]);
   let elemento = new Array(labels).fill(labels);
 
   const [selectedImage, setselectedImage] = useState(infoProjetos[0][1]);
   const [selectedDescricao, setSelectedDescricao] = useState(
     infoProjetos[0][2]
   );
-  const [selectedClass, setSelectedClass] = useState([
-    "butao1",
-    "selectedP",
-    "nonSelectedP",
-    "nonSelectedP",
-  ]);
+  const [selectedClass, setSelectedClass] = useState([]);
+
   var newClasses = [];
 
+  useEffect(() => {
+    setselectedImage(infoProjetos[0][1]);
+    setLabels(infoProjetos[0][0]);
+    setSelectedClass([
+      "1",
+      "selectedP",
+      "nonSelectedP",
+      "nonSelectedP",
+    ])
+
+    if (lang === "pt") {
+      setSelectedDescricao(infoProjetos[0][2]);
+    } else setSelectedDescricao(infoProjetos[0][3]);
+  }, [lang])  
+
+  /* Funcao para transitar entre projetos */
   function changeB(e) {
     if (selectedClass[0] !== e.target.id) {
-      
       switch (e.target.id) {
         case "1":
           newClasses = ["1", "selectedP", "nonSelectedP", "nonSelectedP"];
@@ -44,14 +56,19 @@ export default function Projetos({ lang }) {
       while (cont < im.length) {
         im[cont].style.transform = "translateX(0)";
         cont++;
-      }      
-      
+      }
+
       setselectedImage(infoProjetos[parseInt(e.target.id) - 1][1]);
-      setSelectedDescricao(infoProjetos[parseInt(e.target.id) - 1][2]);
       setLabels(infoProjetos[parseInt(e.target.id) - 1][0]);
 
+      if (lang === "pt") {
+        setSelectedDescricao(infoProjetos[parseInt(e.target.id) - 1][2]);
+      } else {
+        setSelectedDescricao(infoProjetos[parseInt(e.target.id) - 1][3]);
+      }
+
       document.getElementById("numeroPagina").innerHTML =
-      1 + "/" + infoProjetos[parseInt(e.target.id) - 1][0];
+        1 + "/" + infoProjetos[parseInt(e.target.id) - 1][0];
     }
   }
 
@@ -61,7 +78,7 @@ export default function Projetos({ lang }) {
     let cont = 0;
 
     document.getElementById("numeroPagina").innerHTML =
-    parseInt(e.target.id) + 1 + "/" + im.length;
+      parseInt(e.target.id) + 1 + "/" + im.length;
 
     while (cont < im.length) {
       im[cont].style.transform = trans;
@@ -73,18 +90,28 @@ export default function Projetos({ lang }) {
   }
 
   return (
-    <section className={s.projetos}>
+    <section className={s.projetos} id="3">
       <div className={s.tituloProjetos}>
-        <h1>Projetos</h1>
+        <h1>{lang === "pt" ? <>Projetos</> : <>Projects</>} </h1>
         <p>
-          Como um aspirante a desenvolvedor sem experiência profissional, possuo
-          alguns projetos pessoais/acadêmicos que criei para aprender e
-          aperfeiçoar as minhas habilidades
+          {lang === "pt" ? (
+            <>
+              Como um aspirante a desenvolvedor sem experiência profissional,
+              possuo alguns projetos pessoais/acadêmicos que criei para aprender
+              e aperfeiçoar as minhas habilidades
+            </>
+          ) : (
+            <>
+              As a aspiring developer without any professional experience, I
+              have some personal/academic projects that I created to learn and
+              improve my skills
+            </>
+          )}
         </p>
       </div>
       <nav className={s.navegacaoProjetos}>
         <button onClick={changeB} class={selectedClass[1]} id="1">
-          Calculadora
+          {lang === "pt" ? <>Calculadora</> : <>Calculator</>}
         </button>
         <button onClick={changeB} class={selectedClass[2]} id="2">
           Java.Bet

@@ -204,6 +204,8 @@ video {
   transition: all 0.4s;
   cursor: pointer;
 }
+
+/* Link externo em português */
 .descricao .linkExterno:hover,
 .linkExterno2:hover {
   transform: translateX(-100%);
@@ -221,7 +223,7 @@ video {
   border-radius: 500px;
   background-color: white;
   color: rgb(0, 0, 0);
-  transition: all 0.4s;
+  transition: all 0.3s;
   display: block;
 }
 .descricao .linkExterno:hover::after,
@@ -229,14 +231,54 @@ video {
   display: flex;
   align-items: center;
   padding-left: 55%;
-  font-size: 16.5px;
+  font-size: 16px;
   left: 50%;
   width: 300%;
   border-radius: 0px 500px 500px 0px;
-  content: "Acesse o link";
+  content: "Acesse o site";
 }
 
 .linkExterno2:hover:after {
   content: "Acesse o Github";
   font-size: 14px;
 }
+
+/* Link externo em inglês */
+
+.descricao .linkExternoEng:hover,
+.linkExterno2Eng:hover {
+  transform: translateX(-100%);
+}
+.descricao .linkExternoEng::after,
+.linkExterno2Eng::after {
+  content: "";
+  font-size: 0px;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 500px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s;
+  display: block;
+}
+.descricao .linkExternoEng:hover::after,
+.linkExterno2Eng:hover::after {
+  display: flex;
+  align-items: center;
+  padding-left: 55%;
+  font-size: 16px;
+  left: 50%;
+  width: 300%;
+  border-radius: 0px 500px 500px 0px;
+  content: "Access the site";
+}
+
+.linkExterno2Eng:hover:after {
+  content: "Access Github";
+  font-size: 14px;
+}
+

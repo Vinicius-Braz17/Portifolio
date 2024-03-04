@@ -80,13 +80,12 @@ function InicioHome({ lang }) {
                 const texto = juncaoLetras.join('')
                 document.querySelector("#titulo").innerHTML = texto
             }, i*250)            
-        }
+        }      
 
-        setClas("come")       
-             
+        setClas('come')
     }
 
-    useEffect(digitarNome)   
+    useEffect(digitarNome, []) 
     inciarlizarParticulas()
       
     return (

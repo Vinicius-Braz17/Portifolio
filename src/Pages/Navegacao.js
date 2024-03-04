@@ -19,29 +19,38 @@ function Navegacao({ changeL, language }) {
       <div className={s.divNavegacaoBotoes}>
 
         <p>{language === "pt" ? (
-          <Link Link to="2" spy={true} smooth={true} offset={-20} duration={500}>
+          <Link Link to="1" spy={true} smooth={true} offset={0} duration={500}>
+            Missão, visão, valores
+          </Link>) : (
+          <Link to="1" spy={true} smooth={true} offset={0} duration={500}>
+            Mission, vision, values
+          </Link>
+        )}
+        </p>
+        
+        <p>{language === "pt" ? (
+          <Link Link to="2" spy={true} smooth={true} offset={-10} duration={500}>
             Sobre
           </Link>) : (
-          <Link Link to="2" spy={true} smooth={true} offset={-20} duration={500}>
+          <Link Link to="2" spy={true} smooth={true} offset={-10} duration={500}>
             About
           </Link>)}
         </p>
 
         <p>{language === "pt" ? (
-          <Link Link to="1" spy={true} smooth={true} offset={-20} duration={500}>
-            Missão, visão, valores
+          <Link Link to="3" spy={true} smooth={true} offset={-10} duration={500}>
+            Projetos
           </Link>) : (
-          <Link to="1" spy={true} smooth={true} offset={20} duration={500}>
-            Mission, vision, values
-          </Link>
-        )}
+          <Link Link to="3" spy={true} smooth={true} offset={-10} duration={500}>
+            Projects
+          </Link>)}
         </p>
 
         <p>{language === "pt" ? (
-          <Link Link to="3" spy={true} smooth={true} offset={-20} duration={500}>
+          <Link Link to="4" spy={true} smooth={true} offset={-10} duration={500}>
             Contato
           </Link>) : (
-          <Link Link to="3" spy={true} smooth={true} offset={-20} duration={500}>
+          <Link Link to="4" spy={true} smooth={true} offset={-10} duration={500}>
             Contact
           </Link>)}
         </p>
