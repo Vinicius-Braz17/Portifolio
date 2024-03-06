@@ -41,26 +41,21 @@ Easter-Egg: todos os logos do React presentes na página contém uma animação 
 ## Conteúdo
 O site contém 5 partes principais:
 
-# Navegação:
+### Navegação:
 Barra de navegação, mostrada ao abrir o site na parte superior, contém um logo do react (animado com spin), textos que levam às diferentes partes da página, criadas com o componente "Link", do "react-scroll", e, no lado direito, há duas bandeiras (Brasil e EUA), que servem para mudar a linguagem do site, ferramenta feita utilizando UseState e renderização condicional
 
-# Inicio Home:
+### Inicio Home:
 página inicial do site, mostrada ao abrir, possui um fundo com um degradê em roxo e preto, possui uma animação de pequenas particulas se movendo, e também um efeito de digitação lenta do meu nome ao iniciar a página
 
-# Sobre Mim:
+### Sobre Mim:
 Segunda parte do site, mostra uma seção dividida em dois, em 32%-68% da tela. Ao lado esquerdo, há botões que mostram tópicos gerais sobre mim, e ao lado direto, há a descrição destes tópicos em 3 cards animados com fade-in e fade-out ao clicar em um dos botões do painel da esquerda. E na divisória destes dois paineis, há uma foto minha.
 
-# Missão, visão e valores:
+### Missão, visão e valores:
 3ª seção do site, são expostos 3 cards com efeito de hover-flip, o primeiro mostra a minha missão, o meu objetivo como profissional, qual o sentido do meu trabalho. O segundo card mostra minha visão, como me vejo atuando nesta área em algum tempo, qual o meu sonho de realização profissional. E o terceiro mostra os meus valores, meus princípios, o que eu valorizo de comportamentos profissionalmente
 
-# Projetos:
+### Projetos:
 Módulo que mostra os meus projetos pessoais/acadêmicos, tem um menu de navegação vertical com os nomes de cada projeto, e o conteúdo é mostrado em uma section dividido em duas partes, uma de imagens (esquerda), e outra com a descrição e tecnologias utilizadas no projeto (direita)
 
-# Contato:
+### Contato:
 ultima parte do site, consiste em um elemento Footer extendido, na parte da direita contém um icone do React (animado com spin), meu nome, ano de desenvolvimento do projeto e meus meios de comunicação (Linkedin, WhatsApp e Email). Na parte da esquerda possui uma ferramenta de mensagens via formulário HTML, foi utilizado o site form Submit (https://formsubmit.co), o usuário preenche o formulário com nome, email e mensagem, e estas informações chegam em meu email.
 
-
-### Para fazer
-
-- Revisar textos
-- Finalizar os textos em português e inglês

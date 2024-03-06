@@ -3,8 +3,9 @@ import { Link } from 'react-scroll'
 import icone from "../images/reactIcon.png";
 import BR from "../images/br.jpg";
 import USA from "../images/eua.jpg";
+// import { Nav } from "reactstrap";
 
-function Navegacao({ changeL, language }) {
+export default function Navegacao({ changeL, language }) {
 
   function spin(e) {
     const elemento = document.getElementById(e.target.id)
@@ -64,4 +65,3 @@ function Navegacao({ changeL, language }) {
   );
 }
 
-export default Navegacao;

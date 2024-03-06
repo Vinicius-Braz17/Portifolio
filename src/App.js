@@ -1,8 +1,9 @@
 import Navegacao from './Pages/Navegacao';
 import React, { useState } from 'react';
 import './App.css'
-import Projetos from './Pages/Projetos';
 import BotaoBackToTop from './Elementos/BotaoBackToTop';
+import ExperienciaProf from './Pages/ExperienciaProf';
+import Projetos from './Pages/Projetos';
 import Rodape from './Pages/Rodape';
 import InicioHome from './Pages/InicioHome';
 import SobreMim from './Pages/SobreMim';
@@ -20,8 +21,9 @@ function App() {
   <>
    <Navegacao changeL={changeLanguage} language={language}/>
    <InicioHome lang={language}/>
-   <MVV lang={language}/>
+   <ExperienciaProf />
    <SobreMim lang={language}/>
+   <MVV lang={language}/>
    <Projetos lang={language}/>
    <Rodape lang={language}/>
    <BotaoBackToTop />  

@@ -1,0 +1,31 @@
+.experiencias {
+  display: flex;
+  position: relative;
+  height: 420px;
+} .experiencias div {
+  margin: 0;
+}
+
+.item1 {
+    text-align: center;
+    padding: 15px 0;
+    border: 1px solid black;
+    font-size: 35px;
+} 
+.item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    width: 45%;
+}.item2 img {
+    height: 100px;
+} .item2 main h4 {
+  font-size: 28px;
+} .item2 p {
+font-size: 18px;
+}.item2 main {
+  text-align: left;
+}
