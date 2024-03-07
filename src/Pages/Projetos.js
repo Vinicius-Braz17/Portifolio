@@ -90,7 +90,7 @@ export default function Projetos({ lang }) {
   }
 
   return (
-    <section className={s.projetos} id="3">
+    <section className={s.projetos} id="4">
       <div className={s.tituloProjetos}>
         <h1>{lang === "pt" ? <>Projetos</> : <>Projects</>} </h1>
         <p>

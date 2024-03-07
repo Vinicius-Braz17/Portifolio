@@ -12,7 +12,7 @@ export default function Rodape({ lang }) {
   }
 
   return (
-    <footer className={s.rodape} id="4">
+    <footer className={s.rodape} id="5">
       <section className={s.sesaoIcones}>
         <div className={s.divSesaoIcones}>
           <img

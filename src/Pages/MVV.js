@@ -3,7 +3,7 @@ import s from "./MVV.module.css"
 
 export default function MVV({ lang }) {
     return (
-        <section className={s.sessaoMVV} id='1'>
+        <section className={s.sessaoMVV} id='2'>
             {lang === 'pt' ? (<h1>Missão, visão e valores</h1>) : (<h1>Mission, Vision and Values</h1>)}
             <br></br>
             <div className={s.div_cards}>

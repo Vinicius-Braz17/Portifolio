@@ -21,38 +21,47 @@ export default function Navegacao({ changeL, language }) {
 
         <p>{language === "pt" ? (
           <Link Link to="1" spy={true} smooth={true} offset={0} duration={500}>
-            Missão, visão, valores
+            Sobre mim
           </Link>) : (
           <Link to="1" spy={true} smooth={true} offset={0} duration={500}>
-            Mission, vision, values
+            About me
           </Link>
         )}
         </p>
         
         <p>{language === "pt" ? (
           <Link Link to="2" spy={true} smooth={true} offset={-10} duration={500}>
-            Sobre
+            Missão, visão e valores
           </Link>) : (
           <Link Link to="2" spy={true} smooth={true} offset={-10} duration={500}>
-            About
+            Mission, vision and values  
           </Link>)}
         </p>
 
         <p>{language === "pt" ? (
           <Link Link to="3" spy={true} smooth={true} offset={-10} duration={500}>
-            Projetos
+            Experiência profissional
           </Link>) : (
           <Link Link to="3" spy={true} smooth={true} offset={-10} duration={500}>
+            Professtional experience
+          </Link>)}
+        </p>
+
+        <p>{language === "pt" ? (
+          <Link Link to="4" spy={true} smooth={true} offset={-10} duration={500}>
+            Projetos
+          </Link>) : (
+          <Link Link to="4" spy={true} smooth={true} offset={-10} duration={500}>
             Projects
           </Link>)}
         </p>
 
         <p>{language === "pt" ? (
-          <Link Link to="4" spy={true} smooth={true} offset={-10} duration={500}>
-            Contato
+          <Link Link to="5" spy={true} smooth={true} offset={-10} duration={500}>
+            Contate-me
           </Link>) : (
-          <Link Link to="4" spy={true} smooth={true} offset={-10} duration={500}>
-            Contact
+          <Link Link to="5" spy={true} smooth={true} offset={-10} duration={500}>
+            Contact me
           </Link>)}
         </p>
       </div>

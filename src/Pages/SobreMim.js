@@ -66,7 +66,7 @@ export default function SobreMim({ lang }) {
   }
 
   return (
-    <section className={s.introducao} id="2">
+    <section className={s.introducao} id="1">
       <div className={s.painel_esquerda}>
         <img
           alt="Foto profissional do Vinícius"

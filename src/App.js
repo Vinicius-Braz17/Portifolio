@@ -21,9 +21,9 @@ function App() {
   <>
    <Navegacao changeL={changeLanguage} language={language}/>
    <InicioHome lang={language}/>
-   <ExperienciaProf />
    <SobreMim lang={language}/>
    <MVV lang={language}/>
+   <ExperienciaProf lang={language}/>
    <Projetos lang={language}/>
    <Rodape lang={language}/>
    <BotaoBackToTop />  

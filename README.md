@@ -59,3 +59,10 @@ Módulo que mostra os meus projetos pessoais/acadêmicos, tem um menu de navega�
 ### Contato:
 ultima parte do site, consiste em um elemento Footer extendido, na parte da direita contém um icone do React (animado com spin), meu nome, ano de desenvolvimento do projeto e meus meios de comunicação (Linkedin, WhatsApp e Email). Na parte da esquerda possui uma ferramenta de mensagens via formulário HTML, foi utilizado o site form Submit (https://formsubmit.co), o usuário preenche o formulário com nome, email e mensagem, e estas informações chegam em meu email.
 
+
+## To do
+
+- Revisar tudo
+- Analisar responsividade no notebook
+ 
+
