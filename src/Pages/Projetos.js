@@ -91,55 +91,59 @@ export default function Projetos({ lang }) {
 
   return (
     <section className={s.projetos} id="4">
-      <div className={s.tituloProjetos}>
-        <h1>{lang === "pt" ? <>Projetos</> : <>Projects</>} </h1>
-        <p>
-          {lang === "pt" ? (
-            <>
-              Como um aspirante a desenvolvedor sem experiência profissional,
-              possuo alguns projetos pessoais/acadêmicos que criei para aprender
-              e aperfeiçoar as minhas habilidades
-            </>
-          ) : (
-            <>
-              As a aspiring developer without any professional experience, I
-              have some personal/academic projects that I created to learn and
-              improve my skills
-            </>
-          )}
-        </p>
-      </div>
-      <nav className={s.navegacaoProjetos}>
-        <button onClick={changeB} class={selectedClass[1]} id="1">
-          {lang === "pt" ? <>Calculadora</> : <>Calculator</>}
-        </button>
-        <button onClick={changeB} class={selectedClass[2]} id="2">
-          Java.Bet
-        </button>
-        <button onClick={changeB} class={selectedClass[3]} id="3">
-          FrubFy
-        </button>
-      </nav>
-      <section className={s.descProjetos}>
-        <div className={s.images}>
-          <div className={s.divImagens}>{selectedImage}</div>
-
-          <div className={s.navegacaoImagens}>
-            <b id="numeroPagina">1/{infoProjetos[0][0]}</b>
-            <br></br>
-            {elemento.map((a, index) => {
-              return (
-                <label
-                  onClick={passarImagens}
-                  id={index}
-                  name={"label"}
-                ></label>
-              );
-            })}
-          </div>
+      <div class="anima">
+        <div className={s.tituloProjetos}>
+          <h1>{lang === "pt" ? <>Projetos</> : <>Projects</>} </h1>
+          <p>
+            {lang === "pt" ? (
+              <>
+                Como um aspirante a desenvolvedor sem experiência profissional,
+                possuo alguns projetos pessoais/acadêmicos que criei para aprender
+                e aperfeiçoar as minhas habilidades
+              </>
+            ) : (
+              <>
+                As a aspiring developer without any professional experience, I
+                have some personal/academic projects that I created to learn and
+                improve my skills
+              </>
+            )}
+          </p>
+        <nav className={s.navegacaoProjetos}>
+          <button onClick={changeB} class={selectedClass[1]} id="1">
+            {lang === "pt" ? <>Calculadora</> : <>Calculator</>}
+          </button>
+          <button onClick={changeB} class={selectedClass[2]} id="2">
+            Java.Bet
+          </button>
+          <button onClick={changeB} class={selectedClass[3]} id="3">
+            FrubFy
+          </button>
+        </nav>
         </div>
-        <div className={s.descricao}>{selectedDescricao}</div>
-      </section>
+      </div>
+     <div class="anima">
+       <section className={s.descProjetos}>
+         <div className={s.images}>
+           <div className={s.divImagens}>{selectedImage}</div>
+      
+           <div className={s.navegacaoImagens}>
+             <b id="numeroPagina">1/{infoProjetos[0][0]}</b>
+             <br></br>
+             {elemento.map((a, index) => {
+               return (
+                 <label
+                   onClick={passarImagens}
+                   id={index}
+                   name={"label"}
+                 ></label>
+               );
+             })}
+           </div>
+         </div>
+         <div className={s.descricao}>{selectedDescricao}</div>
+       </section>
+     </div>
     </section>
   );
 }
