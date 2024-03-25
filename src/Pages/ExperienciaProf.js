@@ -5,7 +5,7 @@ export default function ExperienciaProf({lang}) {
   return (
     <section id='3' style={{backgroundColor: '#383838', padding: '80px 0'}}>
   
-        <div class={s.item1}>
+        <div class={s.header}>
           {lang === 'pt' ? (
             <>
               Experiências profissionais 
@@ -21,7 +21,7 @@ export default function ExperienciaProf({lang}) {
         <br></br>
         <br></br>
     <section className={s.experiencias}>
-        <div class={s.item2}>
+        <div class={s.painel_imagem_frubana}>
             <main>
               <a href="https://www.linkedin.com/company/frubana/mycompany/" target="_blank" rel='noreferrer' title="Conheça a empresa">
                 <img alt='logo frubana' src={frubana}/>
@@ -57,7 +57,7 @@ export default function ExperienciaProf({lang}) {
               </p>
             </main>
         </div>
-        <div class={s.item3}>
+        <div class={s.descricao_experiencia}>
             <main>
               <p>
                 {lang === 'pt' ? (
@@ -80,7 +80,7 @@ export default function ExperienciaProf({lang}) {
                 
               </p>
               <br></br>
-              <p style={{fontSize: '13px'}}>
+              <p style={{fontSize: '13.7px'}}>
                 {lang === 'pt' ? (
                   <>
                     Google Sheets &#8226; Comunicação &#8226; Resolução de problemas

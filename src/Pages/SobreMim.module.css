@@ -3,7 +3,7 @@
     display: flex;
     align-items: flex-start;
 	border-bottom: 3.5px solid rgb(139, 77, 255);
-    height: 600px;
+    height: 750px;
 }
 
 .foto_profissional {
@@ -12,13 +12,14 @@
     z-index: 1;
     border: 3px outset rgb(139, 77, 255);
     box-shadow: 3px 3px 8px rgb(28, 176, 221);
+    align-self: center;
 }
 
 .painel_esquerda {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     align-content: space-evenly;
     height: 100%;
@@ -27,9 +28,17 @@
     vertical-align: middle;
 }
 
+.painel_esquerda div {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    height: max-content;
+}
+
+
 .painel_esquerda .botoes_introducao {
-    margin: 10px 0 10px 25px;
     /* border: 1px solid white; */
+    margin: 18px 0 18px 75px;
     font-size: 35px;
     padding: 5px 0;
     transition: all 0.4s;
@@ -73,14 +82,22 @@
 .painel_direita {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     height: 100%;
     width: 68%;
     background-color: rgb(138, 138, 138);
 }
 
-.painel_direita h1 {
+.painel_direita div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+
+}
+
+
+.painel_direita div h1 {
     position: relative;
     top: 60px;
     width: 100%;
@@ -89,10 +106,9 @@
     font-size: 65px;
 }
 
-.painel_direita article {
+.painel_direita div article {
     background-color: white;
-    box-shadow: 2px 2px 7px rgb(139, 77, 255);
-    margin: 0px 10px;
+    margin: 60px 15px;
     border-radius: 5px;
     width: 285px;
     height: 420px;
@@ -106,28 +122,28 @@
     text-align: center;
 }
 
-.painel_direita article:hover {
-    transform: translateY(-5px)
+.painel_direita div article:hover {
+    box-shadow: 0px 0px 18px rgb(139, 77, 255);
 }
 
-.painel_direita img {
-    height: 160px;
+.painel_direita div img {
+    height: 110px;
     margin: 0 auto;
 }
 
-.painel_direita article hr {
+.painel_direita div article hr {
     border: 1px solid rgb(0, 0, 0);
     width: 100%;
     margin: 5px 0px;
 }
-/* .painel_direita article h3 {
+/* .painel_direita div article h3 {
     border-bottom: 1px solid grey;
     width: 100%;
 } */
 
-.painel_direita p {
+.painel_direita div p {
     width: 100%;
-    font-size: 15px;
+    font-size: 16px;
     box-sizing: border-box;
     padding: 8px;
     text-align: center;
@@ -135,14 +151,14 @@
 
 
 @media screen and (max-width: 1560px) {
-    .painel_direita article {
+    .painel_direita div article {
         width: 240px;
         height: 370px;
     }
-    .painel_direita img {
+    .painel_direita div img {
         height: 80px;
     }
-    .painel_direita p {
+    .painel_direita div p {
         font-size: 15px;
     }
     .introducao {
@@ -150,9 +166,12 @@
     }
     .painel_esquerda .botoes_introducao {
         font-size: 28px;   
-        margin: 20px 0 10px 35px; 
+        margin: 20px 0 10px 65px; 
     }
-    .painel_direita h1 {
+    .foto_profissional {
+        height: 180px;
+    }
+    .painel_direita div h1 {
         top: 45px;
         font-size: 48px;
     }

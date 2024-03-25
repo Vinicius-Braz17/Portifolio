@@ -18,7 +18,6 @@ export default function Navegacao({ changeL, language }) {
 
       <img className={s.fotoNav} onClick={spin} id='icone_react_nav' src={icone} alt="Icone Currículo navegação" />
       <div className={s.divNavegacaoBotoes}>
-
         <p>{language === "pt" ? (
           <Link Link to="1" spy={true} smooth={true} offset={0} duration={500}>
             Sobre mim

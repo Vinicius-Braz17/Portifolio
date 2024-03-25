@@ -5,7 +5,7 @@
     background-color: rgb(255, 255, 255);
 }
 
-.sessaoMVV h1 {
+.sessaoMVV div h1 {
     background-image: linear-gradient(to right, rgb(122, 45, 255), rgb(71, 78, 255), rgb(43, 170, 255));
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -19,20 +19,19 @@
 }
 
 .div_cards {
-    margin: 50px auto;
+    margin: 0px auto;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 33%;
-    transform: translate(0, -50%);
 }
 
 .div_missao, .div_valores, .div_visao {
     position: relative;
-    margin: 0 35px;
-    height: 550px;
-    width: 360px;
+    margin: 0 25px;
+    height: 480px;
+    width: 320px;
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
@@ -58,7 +57,7 @@
 }
 
 
-.div_cards .card {
+.div_cards div .card {
     backface-visibility: hidden;
     position: absolute;
     border-radius: 5px;
@@ -74,7 +73,6 @@
     .div_cards {
         flex-wrap: wrap;
         margin-top: 0px;
-        border: 1px solid black;
         top: 4%;
         transform: none;
         width: 100vh;
@@ -120,12 +118,15 @@
 @media screen and (max-width: 1560px) {
     .div_missao, .div_valores, .div_visao {
         margin: 0 30px;
-        height: 480px;
-        width: 315px;
+        height: 440px;
+        width: 280px;
         text-align: center;
         cursor: pointer;
         border-radius: 5px;
         transition: all 0.8s ease-out;
+    }
+    .div_cards .versoCard p {
+        font-size: 16px;
     }
     .sessaoMVV {
         height: 820px;

@@ -1,40 +1,47 @@
 .experiencias {
   display: flex;
   position: relative;
-} .experiencias div {
+}
+.experiencias div {
   margin: 0;
 }
 
-.item1 {
-    text-align: center;
-    padding: 15px 0;
-    font-size: 48px;
-    font-weight: bold;
-    color: white;
-  } 
-.item2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    padding-right: 60px;    
-    width: 50%;
-}.item2 img {
-    height: 100px;
-    transition: all 0.3s;
-} .item2 img:hover {
+.header {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.5s;
+}
+.painel_imagem_frubana {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 60px;
+  width: 50%;
+}
+.painel_imagem_frubana img {
+  height: 100px;
+  transition: all 0.3s;
+}
+.painel_imagem_frubana img:hover {
   transform: scale(105%);
-} 
-.item2 main h4 {
+}
+.painel_imagem_frubana main h4 {
   font-size: 28px;
   color: white;
-} .item2 p {
-font-size: 18px;
+  transition: all 0.5s;
+}
+.painel_imagem_frubana p {
+  font-size: 18px;
   color: white;
-}.item2 main {
+}
+.painel_imagem_frubana main {
   text-align: left;
 }
-.item3 {
+.descricao_experiencia {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -43,12 +50,40 @@ font-size: 18px;
   /* border: 1px solid rgb(255, 159, 159); */
   position: relative;
 }
-.item3 main {
+.descricao_experiencia main {
   width: 85%;
 }
-.item3 main p {
+.descricao_experiencia main p {
   text-align: justify;
   color: white;
   font-size: 15px;
-  /* border: 1px solid white; */
+}
+
+@media screen and (min-width: 1560px) {
+  .header {
+    font-size: 55px;
+  }
+  .painel_imagem_frubana {
+    padding-right: 90px;
+    height: 420px;
+  }
+  .painel_imagem_frubana img {
+    height: 112px;
+  }
+  .painel_imagem_frubana main h4 {
+    font-size: 30px;
+  }
+  .painel_imagem_frubana p {
+    font-size: 20px;
+    color: white;
+  }
+  .descricao_experiencia {
+    padding-left: 30px;
+  }
+  .descricao_experiencia main p {
+    text-align: justify;
+    color: white;
+    font-size: 17px;
+    /* border: 1px solid white; */
+  }
 }

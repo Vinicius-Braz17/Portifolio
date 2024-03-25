@@ -9,9 +9,13 @@
 	border-bottom: 2px solid rgb(139, 77, 255);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
 	.navegacao {
-		width: 100vh
+		width: 100vw;
+		z-index: 2;
+	}
+	.navegacao .fotoNav {
+		height: 0px;
 	}
 }
 
