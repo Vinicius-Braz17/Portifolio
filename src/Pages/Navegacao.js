@@ -42,7 +42,7 @@ export default function Navegacao({ changeL, language }) {
             Experiência profissional
           </Link>) : (
           <Link Link to="3" spy={true} smooth={true} offset={-10} duration={500}>
-            Professtional experience
+            Professional experience
           </Link>)}
         </p>
 
