@@ -81,7 +81,7 @@ export const infoProjetos = [
         This was my first project, it consists on a interative calculator with a JavaScript algorithm with the objetive of solving equation and mathematical operations. It also has a color adjustment system, allowing the user to change the  background color of the interface by their preference.  
       </p>
       <div>
-        <p>Used technologies:</p>
+        <p>Used Technologies:</p>
         {/*Ícones das gracinha*/}
         <img title='HTML' alt="HTML" src={html}></img>
         <img title='CSS' alt="CSS" src={css}></img>
@@ -151,7 +151,7 @@ export const infoProjetos = [
         Project designed and developed at the first semester of my bachelor's degree in computer science. Me and my team developed a betting house called "JavaBet", featuring two of the greatest cassinos classics: Slots and Black Jack. The project has a system to users registration, login screen, admin's menus, withdrawal and deposit of fictitious money, betting history and access to personal user information, letting them being able to change and even delete them.
       </p>
       <div>
-        <p>Tecnologias utilizadas:</p>
+        <p>Used Technologies:</p>
         {/*Ícones das gracinha*/}
         <img title='Java' alt="Java" src={Java}></img>
         <img title='Java Swing' alt="Java Swing" src={Swing}></img>
@@ -163,7 +163,7 @@ export const infoProjetos = [
           href="https://github.com/Vinicius-Braz17/Casa_de_Apostas"
           target="blank"
         >
-          <article className={s.linkExterno2}>
+          <article className={s.linkExterno2Eng}>
             <FaGithub />
           </article>
         </a>
@@ -264,10 +264,10 @@ export const infoProjetos = [
           <b>Frubana </b>
         </a>
         that's why I call it "FrubFy". 
-        The project counts with a simple interface, but very useful and interactive, it has a visual scheme involving columns and records of future collaborators in the form of cards. The model was developed based on the <b>KanBan methodology</b>, of activities management, but adaptated to the hiring process flow. The admission is separated in two KanBans, one for the <b>main process</b>, and other for <b>admission medical examination </b>, in witch the health departament has a visibility of the collaborators and can register all the informations about the exam. For now, it works only in my localhost, but I'm working to deploy this application and release to everyone test it.
+        The project counts with a simple interface, but very useful and interactive, it has a visual scheme involving columns and records of future collaborators in the form of cards. The model was developed based on the <b>KanBan methodology</b>, of activities management, but adaptated to the hiring process flow. The admission is separated in two KanBans, one for the <b>main process</b>, and other for <b>admission medical examination</b>, in witch the health departament has a visibility of the collaborators and can register all the informations about the exam. For now, it works only in my localhost, but I'm working to deploy this application and release to everyone test it.
       </p>
     <div>
-      <p>Tecnologias utilizadas:</p>
+      <p>Used Technologies:</p>
       {/*Ícones das gracinha*/}
       <img title='ReactJS' alt="React" src={reactIcon}></img>
       <img title='JavaScript' alt="JavaScript" src={js} />
@@ -277,7 +277,7 @@ export const infoProjetos = [
     <hr style={{ border: "1.5px solid black" }}></hr>
     <div className={s.divBotoes}>
       <a href="https://github.com/Vinicius-Braz17/FrubFy" target="blank">
-        <article className={s.linkExterno2}>
+        <article className={s.linkExterno2Eng}>
           <FaGithub />
         </article>
       </a>

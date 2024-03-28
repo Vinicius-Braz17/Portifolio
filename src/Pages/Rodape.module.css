@@ -32,6 +32,7 @@
     margin: 0 auto;
     transition: all 3.5s;
     cursor: grab;
+    transform: rotate(2deg);
 } .rodape .sesaoIcones div .reactIcon:active {
     cursor: grabbing;
 }

@@ -1,7 +1,7 @@
 .introducao {
     position: relative;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 	border-bottom: 3.5px solid rgb(139, 77, 255);
     height: 750px;
 }
@@ -19,12 +19,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
-    align-content: space-evenly;
     height: 100%;
     width: 32%;
     background-color: rgb(65, 65, 65);
+    /* border: 1px solid red; */
     vertical-align: middle;
 }
 

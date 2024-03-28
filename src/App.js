@@ -37,7 +37,6 @@ $(document).ready(function() {
     $target.each(function() {
       if (documentTop > boxTop(this) - offset) {
         $(this).addClass(animationClass)
-        console.log((this));
       } else {
         $(this).removeClass(animationClass);
       }

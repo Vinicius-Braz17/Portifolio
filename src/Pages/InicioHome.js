@@ -1,5 +1,6 @@
 import s from './InicioHome.module.css'
 import { useState, useEffect } from 'react';
+import $ from 'jquery'
 
 function InicioHome({ lang }) {
 
@@ -78,7 +79,7 @@ function InicioHome({ lang }) {
             setTimeout(() => {
                 juncaoLetras.push(letrasNome[i])
                 const texto = juncaoLetras.join('')
-                document.querySelector("#titulo").innerHTML = texto
+                $("#titulo").html(texto)
             }, i*250)            
         }      
 

@@ -3,16 +3,83 @@ import link from "../images/linkedin.svg";
 import wpp from "../images/whatsapp.svg";
 import email from "../images/envelope-fill.svg";
 import icone from "../images/reactIcon.png";
+import emailjs from "@emailjs/browser";
+import $ from "jquery";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Rodape({ lang }) {
+  let envioDeEmail = 0;
+
   function spin(e) {
-    const elemento = document.getElementById(e.target.id);
+    const elemento = $("#" + e.target.id)[0];
 
     elemento.style.transform += "rotate(360deg)";
   }
 
+  emailjs.init({
+    publicKey: "3h74RWwUSOmEGzBWH",
+  });
+
+  function enviarEmail(e) {
+    e.preventDefault();
+
+    if (envioDeEmail < 3) {
+      const emailSucessfulSent = () => {
+        if (lang === "pt") {
+          toast("Mensagem enviada com sucesso", {
+            closeOnClick: true,
+            theme: "dark",
+            type: "success",
+          });
+        } else {
+          toast("Message send succesfully", {
+            closeOnClick: true,
+            theme: "dark",
+            type: "success",
+          });
+        }
+      };
+      emailjs
+        .sendForm(
+          "service_wqn6goj",
+          "template_zxlex23",
+          $('[name="form-send-email"]')[0],
+          {
+            publicKey: "3h74RWwUSOmEGzBWH",
+          }
+        )
+        .then(() => {
+          emailSucessfulSent();
+          $('[name="form-send-email"]')[0].reset();
+          envioDeEmail++;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } else {
+      const emailSucessfulSent = () => {
+        if (lang === "pt") {
+          toast("Limite de mensagens atingido", {
+            closeOnClick: true,
+            theme: "dark",
+            type: "error",
+          });
+        } else {
+          toast("Messages limit reached", {
+            closeOnClick: true,
+            theme: "dark",
+            type: "error",
+          });
+        }
+      };
+      emailSucessfulSent();
+    }
+  }
+
   return (
     <footer className={s.rodape} id="5">
+      <ToastContainer />
       <section className={s.sesaoIcones}>
         <div className={s.divSesaoIcones}>
           <img
@@ -110,10 +177,7 @@ export default function Rodape({ lang }) {
       </section>
       <section className={s.sessaoMenssagem}>
         {/* Formulário de envio de email */}
-        <form
-          action="https://formsubmit.co/godinhobraz@gmail.com"
-          method="POST"
-        >
+        <form onSubmit={enviarEmail} name="form-send-email">
           {lang === "pt" ? (
             <h1>Deixe uma mensagem para mim</h1>
           ) : (
@@ -129,18 +193,20 @@ export default function Rodape({ lang }) {
                 placeholder="Digite aqui o seu nome"
                 type="text"
                 name="name"
+                title=""
                 required
               />
             </>
           ) : (
             <>
-            <label>Name: </label>
-            <br></br>
+              <label>Name: </label>
+              <br></br>
               <input
                 autoComplete="off"
                 placeholder="Type here your name"
                 type="text"
                 name="name"
+                title=""
                 required
               />
             </>
@@ -150,52 +216,56 @@ export default function Rodape({ lang }) {
           <br></br>
           <label>Email: </label>
           <br></br>
-          {lang === 'pt' ? (
+          {lang === "pt" ? (
             <input
-            autoComplete="off"
-            placeholder="Deixe aqui um endereço de email"
-            type="email"
-            name="email"
-            required
-          />
+              autoComplete="off"
+              placeholder="Deixe aqui um endereço de email"
+              type="email"
+              name="email"
+              title=""
+              required
+            />
           ) : (
             <input
-            autoComplete="off"
-            placeholder="Leave here an email adress"
-            type="email"
-            name="email"
-            required
-          />
-          )} 
+              autoComplete="off"
+              placeholder="Leave here an email adress"
+              type="email"
+              name="email"
+              title=""
+              required
+            />
+          )}
           <br></br>
           <br></br>
           {lang === "pt" ? (
-          <>
-          <label>Mensagem: </label>
-          <textarea
-            style={{ height: "90px" }}
-            autoComplete="off"
-            placeholder="Digite aqui a sua mensagem"
-            type="textarea"
-            name="message"
-            required
-          />
-          </>
+            <>
+              <label>Mensagem: </label>
+              <textarea
+                style={{ height: "90px" }}
+                autoComplete="off"
+                placeholder="Digite aqui a sua mensagem"
+                type="textarea"
+                name="message"
+                title=""
+                required
+              />
+            </>
           ) : (
-          <>
-          <label>Message: </label>
-          <textarea
-            style={{ height: "90px" }}
-            autoComplete="off"
-            placeholder="Type here your message"
-            type="textarea"
-            name="message"
-            required
-          />
-          </>
-        )}
+            <>
+              <label>Message: </label>
+              <textarea
+                style={{ height: "90px" }}
+                autoComplete="off"
+                placeholder="Type here your message"
+                type="textarea"
+                name="message"
+                title=""
+                required
+              />
+            </>
+          )}
           <br></br>
-          
+
           <br></br>
           <br></br>
           {lang === "pt" ? (
@@ -208,3 +278,30 @@ export default function Rodape({ lang }) {
     </footer>
   );
 }
+
+/* 
+
+{ const form = useRef(); const sendEmail = (e) => {
+  e.preventDefault();
+  emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY ).then( (result) => {
+    alert('message sent successfully...');
+    console.log(result.text); },
+    (error) => {
+      console.log(error.text); } ); 
+    };
+
+
+  return ( <div> <h1>Contact Form</h1> <form className='cf' ref={form} onSubmit={sendEmail}> // div container with input element </form> </div> ); } export default App;
+
+
+  
+  <form className='cf'> 
+    <div className='half left cf'> 
+      <input type='text' placeholder='Name' name='user_name' /> 
+      <input type='email' placeholder='Email address' name='user_email' />
+    </div>
+    <div className='half right cf'>
+      <textarea name='message' type='text' placeholder='Message'></textarea>
+    </div> 
+    <input type='submit' value='Submit' id='input-submit' />
+  </form> </div> )*/
