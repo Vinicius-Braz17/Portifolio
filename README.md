@@ -1,8 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Scipts
+## Scripts
 
 No diretório do projeto, rode:
 `npm start`
@@ -12,31 +8,43 @@ Isso vai rodar o projeto em desenvolvimento no localhost 3000, ou seja, o seguin
 
 A página vai recarregar sempre que você fizer uma atualização e salvar o arquivo
 
-### Deploy da aplicação
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-### Sobre este projeto
+# Sobre este projeto
 Este projeto consiste em um portifólio pessoal para me apresentar para o mundo, servirá como um currículo, porém em um formato diferente do tradicional. Pois, além de conter as informações de um CV convencional, mostrará na prática as minhas habilidades de programação e desenvolvimento web utilizando a biblioteca ReactJS.
 
 Pretendo finalizar este projeto ainda em fevereiro e fazer o deploy dele para a internet, e fazer um post para o linkedin, mostrando as tecnologias utilizadas e disponibilizando o link para todos acessarem
 
-### Módulos
 
-## Estilização: 
+# Tecnologias utilizadas
+
+## ReactJS
+O site foi desenvolvido a partir da biblioteca ReactJS, utilizando JavaScript, JSX, HTML e CSS para estruturas todos os componentes do site ([https://react.dev])
+
+## JQuery
+Foi utilizado a biblioteca JQuery para facilitar a manipulação do DOM a partir do JavaScript [text](https://jquery.com)
+
+## EmailJS
+Esta biblioteca foi utilizada para criar uma funcionalidade de envio de emails a partir de um formulário em HTML, consumindo de uma API em JavaScript.
+
+## React-Toastify
+Esta biblioteca foi utilizada para complementar o sistema de envio de emails pelo formulário emitindo mensagens de confirmação na tela para o usuário assim que o email é encaminhado. E definindo um limite de 3 emails por seção.
+
+## React-Scroll
+Utilizei a bibioteca React-Scroll para criar animações fluidas da tela a partir do menu de navegação. Cada botão do menu leva à uma parte do site, e o react-scroll foi de extrema importância para deixar a locomoção até o modulo desejado lisa e fluida.
+
+
+# Design: 
 Procurei estilizar o site de uma maneira clean e moderna, utilizando as cores branco, preto, azul claro e um tom de violeta, o site possui varias animações, como hovers e actives desenvolvidos com CSS3.
 
-A tela inicial conta com 2 animações principais, as pequenas partículas brancas de fundo que se movem ao abrir o site, foi desenvolvida com JS, e o efeito de digitação do meu nome ao iniciar o site, também feito com CSS.
+A tela inicial conta com 2 animações principais, as pequenas partículas brancas de fundo que se movem ao abrir o site, foi desenvolvida com JS, e o efeito de digitação do meu nome ao iniciar o site, também feito com CSS, acrescentado de JavaScript para automatizar o processo de criação de partículas.
 
-Eu busquei sempre criar hovers fluidos e animados, mostrando sombras e dando o efeito de distancia ao passar o mouse em cima do botao
+Eu busquei sempre criar hovers fluidos e animados, mostrando sombras e dando o efeito de distância ao passar o mouse em cima de botões.
 
-Easter-Egg: todos os logos do React presentes na página contém uma animação de "spin" ao clicar neles, clique em um logo 3x seguidas e você vai ver que eles vão girar por um tempo e depois parar
+Foi utilizada uma biblioteca para criação de mensagens de confirmação para deixar o site mais interativo, além de dar um retorno visual para as ações feitas na aplicação.
 
+Easter-Egg: todos os logos do React presentes na página contém uma animação de "spin" ao clicar neles, clique em um logo 3x seguidas e você vai ver que eles vão girar por um tempo e depois parar.
+
+
+# Módulos
 
 ## Conteúdo
 O site contém 5 partes principais:
@@ -57,12 +65,7 @@ Segunda parte do site, mostra uma seção dividida em dois, em 32%-68% da tela. 
 Módulo que mostra os meus projetos pessoais/acadêmicos, tem um menu de navegação vertical com os nomes de cada projeto, e o conteúdo é mostrado em uma section dividido em duas partes, uma de imagens (esquerda), e outra com a descrição e tecnologias utilizadas no projeto (direita)
 
 ### Contato:
-ultima parte do site, consiste em um elemento Footer extendido, na parte da direita contém um icone do React (animado com spin), meu nome, ano de desenvolvimento do projeto e meus meios de comunicação (Linkedin, WhatsApp e Email). Na parte da esquerda possui uma ferramenta de mensagens via formulário HTML, foi utilizado o site form Submit (https://formsubmit.co), o usuário preenche o formulário com nome, email e mensagem, e estas informações chegam em meu email.
+Última parte do site, consiste em um elemento Footer extendido, na parte da direita contém um icone do React (animado com spin), meu nome, ano de desenvolvimento do projeto e meus meios de comunicação (Linkedin, WhatsApp e Email). Na parte da esquerda possui uma ferramenta de mensagens via formulário HTML, foi utilizado a biblioteca EmailJS ([https://formsubmit.co]) para criar essa funcionalidade. O usuário preenche o formulário com nome, email e mensagem, e estas informações chegam no meu email.
 
 
-## To do
-
-- Revisar tudo
-- Analisar responsividade no notebook
- 
 

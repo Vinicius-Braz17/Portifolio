@@ -82,7 +82,15 @@ export default function Rodape({ lang }) {
       <ToastContainer />
       <section className={s.sesaoIcones}>
         <div className={s.divSesaoIcones}>
-          <img
+          {lang === 'pt' ? (<img
+            alt="imagem react fim da pagina"
+            onClick={spin}
+            id="reactIcon"
+            title="Clique para girar"
+            className={s.reactIcon}
+            src={icone}
+          />) : (
+            <img
             alt="imagem react fim da pagina"
             onClick={spin}
             id="reactIcon"
@@ -90,6 +98,7 @@ export default function Rodape({ lang }) {
             className={s.reactIcon}
             src={icone}
           />
+          )}
           <h1>React App</h1>
           <br></br>
           <hr></hr>
