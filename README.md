@@ -1,12 +1,3 @@
-## Scripts
-
-No diretório do projeto, rode:
-`npm start`
-
-Isso vai rodar o projeto em desenvolvimento no localhost 3000, ou seja, o seguinte link:
-`http://localhost:3000`
-
-A página vai recarregar sempre que você fizer uma atualização e salvar o arquivo
 
 # Sobre este projeto
 Este projeto consiste em um portifólio pessoal para me apresentar para o mundo, servirá como um currículo, porém em um formato diferente do tradicional. Pois, além de conter as informações de um CV convencional, mostrará na prática as minhas habilidades de programação e desenvolvimento web utilizando a biblioteca ReactJS.
@@ -16,19 +7,19 @@ Pretendo finalizar este projeto ainda em fevereiro e fazer o deploy dele para a 
 
 # Tecnologias utilizadas
 
-## ReactJS
-O site foi desenvolvido a partir da biblioteca ReactJS, utilizando JavaScript, JSX, HTML e CSS para estruturas todos os componentes do site ([https://react.dev])
+## [ReactJS](https://react.dev)
+O site foi desenvolvido a partir da biblioteca ReactJS, utilizando JavaScript, JSX, HTML e CSS e consumindo de algumas APIs para estruturar todos os componentes e comportamentos do site.
 
-## JQuery
-Foi utilizado a biblioteca JQuery para facilitar a manipulação do DOM a partir do JavaScript [text](https://jquery.com)
+## [JQuery](https://jquery.com)
+Foi utilizado a biblioteca JQuery para facilitar a manipulação do DOM a partir do JavaScript 
 
-## EmailJS
-Esta biblioteca foi utilizada para criar uma funcionalidade de envio de emails a partir de um formulário em HTML, consumindo de uma API em JavaScript.
+## [EmailJS](https://www.emailjs.com)
+A  biblioteca foi utilizada para criar uma funcionalidade de envio de emails a partir de um formulário em HTML, consumindo de uma API em JavaScript.
 
-## React-Toastify
+## [React-Toastify](https://www.npmjs.com/package/react-toastify)
 Esta biblioteca foi utilizada para complementar o sistema de envio de emails pelo formulário emitindo mensagens de confirmação na tela para o usuário assim que o email é encaminhado. E definindo um limite de 3 emails por seção.
 
-## React-Scroll
+## [React-Scroll](https://www.npmjs.com/package/react-scroll)
 Utilizei a bibioteca React-Scroll para criar animações fluidas da tela a partir do menu de navegação. Cada botão do menu leva à uma parte do site, e o react-scroll foi de extrema importância para deixar a locomoção até o modulo desejado lisa e fluida.
 
 
@@ -65,7 +56,16 @@ Segunda parte do site, mostra uma seção dividida em dois, em 32%-68% da tela. 
 Módulo que mostra os meus projetos pessoais/acadêmicos, tem um menu de navegação vertical com os nomes de cada projeto, e o conteúdo é mostrado em uma section dividido em duas partes, uma de imagens (esquerda), e outra com a descrição e tecnologias utilizadas no projeto (direita)
 
 ### Contato:
-Última parte do site, consiste em um elemento Footer extendido, na parte da direita contém um icone do React (animado com spin), meu nome, ano de desenvolvimento do projeto e meus meios de comunicação (Linkedin, WhatsApp e Email). Na parte da esquerda possui uma ferramenta de mensagens via formulário HTML, foi utilizado a biblioteca EmailJS ([https://formsubmit.co]) para criar essa funcionalidade. O usuário preenche o formulário com nome, email e mensagem, e estas informações chegam no meu email.
+Última parte do site, consiste em um elemento Footer extendido, na parte da direita contém um icone do React (animado com spin), meu nome, ano de desenvolvimento do projeto e meus meios de comunicação (Linkedin, WhatsApp e Email). Na parte da esquerda possui uma ferramenta de mensagens via formulário HTML, foi utilizado a biblioteca [EmailJS](https://formsubmit.co) para criar essa funcionalidade. O usuário preenche o formulário com nome, email e mensagem, e estas informações chegam no meu email.
 
 
+## Scripts
+
+No diretório do projeto, rode:
+`npm start`
+
+Isso vai rodar o projeto em desenvolvimento no localhost 3000, ou seja, o seguinte link:
+`http://localhost:3000`
+
+A página vai recarregar sempre que você fizer uma atualização e salvar o arquivo
 
