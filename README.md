@@ -44,7 +44,7 @@ O site contém 5 partes principais:
 Barra de navegação, mostrada ao abrir o site na parte superior, contém um logo do react (animado com spin), textos que levam às diferentes partes da página, criadas com o componente "Link", do "react-scroll", e, no lado direito, há duas bandeiras (Brasil e EUA), que servem para mudar a linguagem do site, ferramenta feita utilizando UseState e renderização condicional
 
 ### Inicio Home:
-página inicial do site, mostrada ao abrir, possui um fundo com um degradê em roxo e preto, possui uma animação de pequenas particulas se movendo, e também um efeito de digitação lenta do meu nome ao iniciar a página
+Página inicial do site, mostrada ao abrir, possui um fundo com um degradê em roxo e preto, possui uma animação de pequenas particulas se movendo, e também um efeito de digitação lenta do meu nome ao iniciar a página
 
 ### Sobre Mim:
 Segunda parte do site, mostra uma seção dividida em dois, em 32%-68% da tela. Ao lado esquerdo, há botões que mostram tópicos gerais sobre mim, e ao lado direto, há a descrição destes tópicos em 3 cards animados com fade-in e fade-out ao clicar em um dos botões do painel da esquerda. E na divisória destes dois paineis, há uma foto minha.
