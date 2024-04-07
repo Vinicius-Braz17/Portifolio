@@ -22,7 +22,7 @@ export const textos = [
             <h3>Ensino superior</h3>
             <hr></hr>
             <p>
-                Cursando bacharelado em <strong>ciência da computação</strong> na Universidade Anhembi Morumbi (UAM)
+                Cursando bacharelado em <strong>Ciência da Computação</strong> na Universidade Anhembi Morumbi (UAM)
             </p>
         </>
         ,
@@ -44,7 +44,7 @@ export const textos = [
             <hr></hr>
 
             <p>
-                Sou um jovem de 18 anos apaixonado por programação e desenvolvimento de sistemas, sempre motivado para resolver problemas e aperfeicoar minhas habilidades
+                Sou um jovem de 18 anos apaixonado por programação e desenvolvimento de sistemas, sempre motivado para resolver problemas e aperfeiçoar minhas habilidades
             </p>
         </>,
         /* Texto sobre mim em Inglês */
@@ -272,11 +272,11 @@ export const textos = [
         <>
             <img alt='imagem react' src={raciocinio} />
 
-            <h3>Raciocinio lógico</h3>
+            <h3>Raciocínio lógico</h3>
             <hr></hr>
 
             <p>
-                Habilidade em lidar com atividades e desafios lógicos, bom raciocinio matemático e aritmético e identificação de padrões
+                Habilidade em lidar com atividades e desafios lógicos, bom raciocínio matemático e aritmético e identificação de padrões
             </p>
         </>,
         
